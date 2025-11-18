@@ -1,0 +1,23 @@
+﻿
+,Reference,Symbol/Library,Value/Footprint,Placement Tip (from your image)
+,U1,MCU_ATSAM:ATSAML21G18,ATSAML21G18B-AUT / QFN-48_7x7mm_P0.5mm,"Center, pins labeled PA00-PA31/PB02-PB23"
+,USBC1,Connector:USB_C,USB3.1C16PFSMT / USB_C_Receptacle,"Left edge, VBUS/CC1/DP1/DN1 to U1"
+,J-LINK1,Connector:Conn_01x10,20021111-00010T4LF / Header_2x5,"Top-left, SWDIO/CLK/RESET to U1 PA01/PA02"
+,LED1,LED:LED_0603,19-217/GHC-YR1S2/3T / LED_0603,"Top-right, via R26=2.2k to 3V3"
+,R1,Device:R,27kΩ / R_0603,"USB pull-up, near USBC1"
+,R3,Device:R,47kΩ / R_0603,"USB pull-up, near USBC1"
+,R26,Device:R,2.2kΩ / R_0603,LED current limit
+,C7,Device:C,100nF / C_0603,Decoupling near U1
+,C6,Device:C,10uF / C_1206,Bulk cap near 3V3
+,D1,Diode:TVS,NUP2114UCMR6T1G / SOIC-8,"USB ESD, near USBC1"
+,D2,Diode:D_SOD123,BAS21HT1G / SOD-123,Clamp near analog
+,Q1,Transistor_BJT:SOT23-BEC,BC847_C2910145 / SOT-23,NPN near 3V3
+,U3,Logic_IC:CD4011,MC14043BDR2G / SOIC-14,Latch near SHAPER_OUT
+,U7,OpAmp:SOT23-5,OPA357AIDBVR / SOT-23-5,"Shaper opamp, input from SiPM_A"
+,U6,OpAmp:SOT23-5_TLV3201,TLV3201AIDBVT / SOT-23-5,Comparator after U7
+,U11,Regulator_Linear:TSOT-23-5,LT3014BHVES5#TRMPBF / TSOT-23-5,LDO for Vload
+,U2,Regulator_Linear:SOT23-5,XC6209F332MR-G / SOT-23-5,3.3V LDO
+,"P1, P2",Connector:PinHeader_2x02_P2.54mm,Header-Male-2.54_2x2 / Header_2x02,"Bottom, mirrored as noted"
+,"H2, H3, H5",Connector:PinHeader_1x07_P2.54mm,KH-2.54PH180-1X7P-L11.5 / PinHeader_1x07,"Expansion headers, right side"
+,TP1-TP18,TestPoint:TestPoint_1,1-POINT TEST POINT / TestPoint_1,"Scattered (e.g., TP1 near RESET, TP5 near SiPM_A)"
+,"+3V3, GND",power:+3V3 / power:GND,-,Power symbols everywhere needed (add flags via Place → Power Flag)
