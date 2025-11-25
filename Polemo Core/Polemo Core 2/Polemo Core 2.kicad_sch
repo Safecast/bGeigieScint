@@ -38455,7 +38455,7 @@
 			)
 		)
 		(property "Value" "TLR341G-GTR"
-			(at 501.142 176.1109 0)
+			(at 500.38 177.8 0)
 			(effects
 				(font
 					(face "Arial")
@@ -49612,7 +49612,7 @@
 		(dnp no)
 		(uuid "844a52c9-e737-434e-af93-5e68b7f7a4c0")
 		(property "Reference" "U4"
-			(at 356.5652 42.9895 0)
+			(at 358.14 40.64 0)
 			(effects
 				(font
 					(face "Arial")
