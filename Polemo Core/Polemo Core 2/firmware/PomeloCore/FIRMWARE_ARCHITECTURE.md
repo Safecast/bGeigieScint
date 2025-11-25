@@ -8,33 +8,33 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         SYSTEM INITIALIZATION                    │
-│  main.c:2163                                                     │
+│                         SYSTEM INITIALIZATION                   │
+│  main.c:2163                                                    │
 ├─────────────────────────────────────────────────────────────────┤
 │  • System clock init (DFLL 48MHz or OSC16M)                     │
 │  • GPIO configuration (LED, AFE, HV, triggers, coincidence)     │
-│  • Load parameters from NVM                                      │
+│  • Load parameters from NVM                                     │
 │  • Initialize peripherals (UART, USB, I2C, ADC, DAC, RTC)       │
 └──────────────────────┬──────────────────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                        MAIN LOOP (while 1)                       │
-│  main.c:2294                                                     │
+│                        MAIN LOOP (while 1)                      │
+│  main.c:2294                                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
-│  │ USB Handler  │  │ UART Handler │  │  List Output FIFO    │  │
-│  │ (CDC Device) │  │ (921600 baud)│  │  Handler             │  │
-│  └──────┬───────┘  └──────┬───────┘  └──────┬───────────────┘  │
-│         │                 │                  │                   │
-│         └─────────────────┴──────────────────┘                   │
-│                           │                                      │
-│                           ▼                                      │
-│              ┌────────────────────────┐                          │
-│              │  Command Parser        │                          │
-│              │  main.c:1896           │                          │
-│              │  (JSON protocol)       │                          │
-│              └────────────────────────┘                          │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐   │
+│  │ USB Handler  │  │ UART Handler │  │  List Output FIFO    │   │
+│  │ (CDC Device) │  │ (921600 baud)│  │  Handler             │   │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────────────┘   │
+│         │                 │                  │                  │
+│         └─────────────────┴──────────────────┘                  │
+│                           │                                     │
+│                           ▼                                     │
+│              ┌────────────────────────┐                         │
+│              │  Command Parser        │                         │
+│              │  main.c:1896           │                         │
+│              │  (JSON protocol)       │                         │
+│              └────────────────────────┘                         │
 └─────────────────────────────────────────────────────────────────┘
                            │
          ┌─────────────────┼─────────────────┐
@@ -52,9 +52,9 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
          │
          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                   INTERRUPT SERVICE ROUTINES                     │
+│                   INTERRUPT SERVICE ROUTINES                    │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │  ┌────────────────────────────────────────────────────────────┐ │
 │  │ GAMMA TRIGGER ISR (main.c:192)                             │ │
 │  │ ────────────────────────────────────────────────────────── │ │
@@ -67,46 +67,46 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
 │  │ 7. List mode FIFO update                                   │ │
 │  │ 8. Statistics accumulation (count, sum, sum²)              │ │
 │  └────────────────────────────────────────────────────────────┘ │
-│                                                                   │
+│                                                                 │
 │  ┌────────────────────────────────────────────────────────────┐ │
 │  │ RTC PERIODIC ISR (main.c:315)                              │ │
 │  │ ────────────────────────────────────────────────────────── │ │
-│  │ • Temperature compensation update (every 1s)                │ │
-│  │ • SiPM bias voltage adjustment based on temp                │ │
-│  │ • HV load regulation                                        │ │
+│  │ • Temperature compensation update (every 1s)               │ │
+│  │ • SiPM bias voltage adjustment based on temp               │ │
+│  │ • HV load regulation                                       │ │
 │  └────────────────────────────────────────────────────────────┘ │
-│                                                                   │
+│                                                                 │
 │  ┌────────────────────────────────────────────────────────────┐ │
 │  │ SYNCHRONIZER ISR (main.c:172)                              │ │
 │  │ ────────────────────────────────────────────────────────── │ │
 │  │ • External sync pulse handler (PIN_PB08)                   │ │
 │  │ • Marker insertion in FIFO (value 9999)                    │ │
 │  └────────────────────────────────────────────────────────────┘ │
-│                                                                   │
+│                                                                 │
 │  ┌────────────────────────────────────────────────────────────┐ │
 │  │ HV LOAD ISR (main.c:336)                                   │ │
 │  │ ────────────────────────────────────────────────────────── │ │
-│  │ • HV current monitoring (PIN_PB10)                          │ │
-│  │ • Automatic boost mode switching                            │ │
+│  │ • HV current monitoring (PIN_PB10)                         │ │
+│  │ • Automatic boost mode switching                           │ │
 │  └────────────────────────────────────────────────────────────┘ │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
          │
          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      HARDWARE CONTROL LAYER                      │
+│                      HARDWARE CONTROL LAYER                     │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
-│  │ HV GENERATOR │  │  ADC/DAC     │  │  TEMPERATURE SENSOR  │  │
-│  │ (main.c:543) │  │ (main.c:677) │  │  (main.c:979)        │  │
-│  ├──────────────┤  ├──────────────┤  ├──────────────────────┤  │
-│  │• TCC PWM     │  │• ADC0 Ch8    │  │• I2C TMP116/TMP451   │  │
-│  │• Dual boost  │  │• DAC0/1      │  │• SiPM temp comp      │  │
-│  │• HV crowbar  │  │• Threshold   │  │• Auto voltage adj    │  │
-│  │• Load sense  │  │• Peak detect │  │                      │  │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘  │
-│                                                                   │
+│                                                                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐   │
+│  │ HV GENERATOR │  │  ADC/DAC     │  │  TEMPERATURE SENSOR  │   │
+│  │ (main.c:543) │  │ (main.c:677) │  │  (main.c:979)        │   │
+│  ├──────────────┤  ├──────────────┤  ├──────────────────────┤   │
+│  │• TCC PWM     │  │• ADC0 Ch8    │  │• I2C TMP116/TMP451   │   │
+│  │• Dual boost  │  │• DAC0/1      │  │• SiPM temp comp      │   │
+│  │• HV crowbar  │  │• Threshold   │  │• Auto voltage adj    │   │
+│  │• Load sense  │  │• Peak detect │  │                      │   │
+│  └──────────────┘  └──────────────┘  └──────────────────────┘   │
+│                                                                 │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │ COINCIDENCE DETECTION (main.c:401)                       │   │
 │  ├──────────────────────────────────────────────────────────┤   │
@@ -114,26 +114,27 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
 │  │ • Monitor input (PA20) / ACK output (PB11)               │   │
 │  │ • Separate coincidence histogram                         │   │
 │  └──────────────────────────────────────────────────────────┘   │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
          │
          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      DATA OUTPUT STREAMS                         │
+│                      DATA OUTPUT STREAMS                        │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+│                                                                 │
 │  • Spectrum histogram (1024 bins, JSON)                         │
 │  • Real-time pulse output (UART/USB)                            │
 │  • List mode with timestamps                                    │
 │  • Dosimetry calculations (CPM, μSv/h)                          │
 │  • System telemetry (temp, uptime, status)                      │
-│                                                                   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ## Hardware Platform
 
 ### Microcontroller
+
 - **MCU**: Atmel SAML21G18B
 - **Core**: ARM Cortex-M0+
 - **Clock**: 48 MHz (DFLL) / 16 MHz (OSC16M)
@@ -141,6 +142,7 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
 - **RAM**: 32 KB
 
 ### Key Peripherals Used
+
 - **ADC**: 12-bit, used for peak detector readout
 - **DAC**: Dual channel for HV control and threshold
 - **TCC**: Timer/Counter for PWM HV generation
@@ -156,6 +158,7 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
 ### Main Components
 
 #### 1. Initialization (main.c:2163)
+
 - System clock configuration
 - GPIO pin setup for all detector interfaces
 - Peripheral initialization (UART, USB, I2C, ADC, DAC, RTC)
@@ -163,7 +166,9 @@ PomeloCore is a sophisticated gamma spectroscopy system firmware built on an Atm
 - Initial state configuration
 
 #### 2. Main Loop (main.c:2294)
+
 The main loop operates in a continuous polling mode:
+
 - **USB Data Handler**: Processes USB CDC commands
 - **UART Data Handler**: Processes UART serial commands
 - **List Mode FIFO**: Outputs event data when enabled
@@ -174,6 +179,7 @@ The main loop operates in a continuous polling mode:
 The system uses a JSON-based protocol over USB/UART:
 
 **Commands:**
+
 - `h` - Get histogram data
 - `s` - Get system status
 - `c` - Get configuration
@@ -183,6 +189,7 @@ The system uses a JSON-based protocol over USB/UART:
 - Parameter setting commands (multi-byte protocol)
 
 **Response Format:**
+
 ```json
 {
   "type": "spectrum|system|config",
@@ -193,12 +200,14 @@ The system uses a JSON-based protocol over USB/UART:
 #### 4. Data Acquisition (main.c:1412)
 
 **DAQ Start Sequence:**
+
 1. Clear spectrum arrays
 2. Reset counters
 3. Configure RTC compare for timed acquisition
 4. Enable interrupt-driven data collection
 
 **DAQ Features:**
+
 - Continuous or timed acquisition modes
 - 1024-channel histogram
 - Separate coincidence histogram
@@ -207,7 +216,9 @@ The system uses a JSON-based protocol over USB/UART:
 #### 5. Interrupt Service Routines
 
 ##### Gamma Trigger ISR (main.c:192)
+
 The heart of the system - triggered on each particle detection:
+
 1. Read ADC value from peak detector
 2. Clear peak detector capacitor
 3. Apply spectral deconvolution filter (pMove matrix)
@@ -219,18 +230,24 @@ The heart of the system - triggered on each particle detection:
 **Performance Note:** ISR is optimized for minimal latency to handle high count rates.
 
 ##### RTC Periodic ISR (main.c:315)
+
 Runs every second for system maintenance:
+
 - Temperature compensation for SiPM bias
 - HV load monitoring and regulation
 - Timed acquisition stop
 
 ##### Synchronizer ISR (main.c:172)
+
 Handles external synchronization pulses:
+
 - Inserts markers (value 9999) in list mode data
 - Allows multi-detector time correlation
 
 ##### HV Load ISR (main.c:336)
+
 Monitors high voltage system:
+
 - Measures HV current draw
 - Switches between normal/boost modes automatically
 - Ensures stable detector operation
@@ -238,24 +255,28 @@ Monitors high voltage system:
 ### Hardware Control Functions
 
 #### High Voltage System (main.c:543, 592, 651)
+
 - **PWM-based boost converter** with dual mode operation
 - **HV enable/disable** with crowbar protection
 - **Dynamic boost switching** based on load
 - **Temperature-compensated SiPM bias** for gain stability
 
 #### ADC/DAC Management (main.c:677, 708)
+
 - **ADC**: Reads peak detector output (12-bit)
 - **DAC0**: Controls high voltage level
 - **DAC1**: Sets discriminator threshold
 - **Calibration support** for linearity correction
 
 #### Temperature Sensing (main.c:979)
+
 - **Supports TMP116 or TMP451** sensors via I2C
 - **Automatic detection** of sensor type
 - **Real-time compensation** of SiPM operating voltage
 - **Temperature coefficient** stored in NVM parameters
 
 #### Coincidence Detection (main.c:401, 428)
+
 - **Hardware-based** using AC and CCL modules
 - **Monitor line** (PA20) for incoming coincidence signals
 - **ACK line** (PB11) for daisy-chain operation
@@ -265,7 +286,9 @@ Monitors high voltage system:
 ### Data Structures
 
 #### Core Parameters (nvm_params.h:3)
+
 Stored in NVM, contains system configuration:
+
 ```c
 struct core_params {
     uint8_t version;
@@ -280,7 +303,9 @@ struct core_params {
 ```
 
 #### Physics Parameters (nvm_params.h:28)
+
 Detector-specific calibration data:
+
 ```c
 struct physics_params {
     uint8_t version;
@@ -300,12 +325,14 @@ struct physics_params {
 The system supports multiple list mode configurations (bit flags in `sys_outputs`):
 
 **UART Outputs:**
+
 - `LIST_UART_PULSE` (bit 0): Simple pulse character per event
 - `LIST_UART_FAST_PULSE` (bit 1): Fast pulse in ISR (minimal latency)
 - `LIST_UART_ENERGY` (bit 2): Energy value per event
 - `LIST_UART_ENERGY_TS` (bit 3): Energy + timestamp
 
 **USB Outputs:**
+
 - `LIST_USB_PULSE` (bit 4): Pulse character via USB
 - `LIST_USB_ENERGY` (bit 5): Energy value via USB
 - `LIST_USB_ENERGY_TS` (bit 6): Energy + timestamp via USB
@@ -322,22 +349,26 @@ The firmware implements a sophisticated **spectral unfolding algorithm** using a
 ### Parameter Management
 
 #### Load Parameters (main.c:1499)
+
 - Reads `core_params` and `physics_params` from NVM
 - Performs version checking and upgrades old formats
 - Validates data integrity
 
 #### Apply Parameters (main.c:2136)
+
 - Configures hardware based on loaded parameters
 - Sets HV, threshold, output modes
 - Enables/disables coincidence
 
 #### Save Parameters
+
 - Writes updated parameters back to NVM
 - Preserves calibration across power cycles
 
 ### Bootloader Interface
 
 The firmware supports double-tap reset to bootloader (main.c:2411):
+
 - Magic value `0xf01669ef` written to end of RAM
 - Allows firmware updates without hardware programmer
 - UF2 bootloader compatible (SAM-BA protocol)
@@ -345,6 +376,7 @@ The firmware supports double-tap reset to bootloader (main.c:2411):
 ## Communication Protocols
 
 ### UART Interface
+
 - **Baud Rate**: 921600 bps
 - **Format**: 8N1
 - **Flow Control**: None
@@ -352,12 +384,14 @@ The firmware supports double-tap reset to bootloader (main.c:2411):
 - **Pin Mapping**: PA12 (TX), PA13 (RX) on SERCOM2
 
 ### USB Interface
+
 - **Class**: CDC (Communications Device Class)
 - **Speed**: Full Speed (12 Mbps)
 - **Enumeration**: Acts as virtual serial port
 - **Power Detection**: VBUS sensing on PA27
 
 ### I2C Interface
+
 - **Mode**: Master
 - **Speed**: 100 kHz (standard mode)
 - **Devices**: TMP116 or TMP451 temperature sensors
@@ -381,6 +415,7 @@ The firmware supports double-tap reset to bootloader (main.c:2411):
 ## Power Management
 
 The firmware includes power optimization features:
+
 - **Clock switching**: DFLL (48 MHz) for USB, OSC16M (16 MHz) for standalone
 - **Sleep modes**: Can enter standby when inactive
 - **Peripheral power gating**: DAC/HV disabled when detector off
@@ -398,6 +433,7 @@ The firmware includes power optimization features:
 ## Build Configuration
 
 ### PlatformIO Settings (platformio.ini)
+
 - **Platform**: atmelsam
 - **Board**: saml21_xpro_b (custom board definition)
 - **Framework**: None (bare metal with ASF)
@@ -405,6 +441,7 @@ The firmware includes power optimization features:
 - **Bootloader Offset**: Custom linker script
 
 ### Compilation Flags
+
 - Standard: C99 with GNU extensions
 - Warnings: Maximum (-Wall and many specific warnings)
 - Math: ARM CMSIS DSP support
@@ -413,12 +450,15 @@ The firmware includes power optimization features:
 ## Development Notes
 
 ### Code Structure
+
 - **Single file architecture**: All application code in main.c (2415 lines)
 - **ASF integration**: Atmel Software Framework for peripheral drivers
 - **Minimal dependencies**: Optimized for embedded constraints
 
 ### Future Enhancements
+
 Potential areas for improvement:
+
 - Modular code organization (separate files for subsystems)
 - DMA for ADC/UART to reduce ISR overhead
 - SD card support for long-term data logging
