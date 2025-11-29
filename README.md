@@ -69,17 +69,24 @@ The board features an integrated **boost converter + linear regulator** topology
 
 ```
 bGeigieScint/
-├── Polemo Core/
-│   └── Polemo Core 2/
-│       ├── Polemo Core 2.kicad_pro       # KiCad project file
-│       ├── Polemo Core 2.kicad_sch       # Schematic (organized in functional blocks)
-│       ├── Polemo Core 2.kicad_pcb       # PCB layout (4-layer, 40×100mm)
-│       └── Polemo Core 2-backups/        # Automatic backups
-├── BOM.csv                                # Bill of Materials
-├── v1_2/                                  # Version 1.2 reference files
-│   └── schematic/
-│       └── bGeigieScint.pdf               # V1.2 schematic PDF
-└── README.md                              # This file
+├── bGeigieScint/
+│   ├── bGeigieScint.kicad_pro       # KiCad project file
+│   ├── bGeigieScint.kicad_sch       # Schematic (organized in functional blocks)
+│   ├── bGeigieScint.kicad_pcb       # PCB layout (4-layer, 40×100mm)
+│   ├── bGeigieScint-backups/        # Automatic backups
+│   ├── firmware/                    # Firmware source code
+│   │   └── PomeloCore/              # Main firmware project
+│   ├── bootloader/                  # Bootloader files
+│   │   └── uf2-samd21/              # UF2 bootloader for SAMD21
+│   ├── v1_2/                        # Version 1.2 reference files
+│   │   ├── schematic/               # V1.2 schematic PDF
+│   │   ├── firmware/                # V1.2 firmware
+│   │   └── bootloader/              # V1.2 bootloader
+│   ├── Images/                      # Project images and photos
+│   └── Misc Docs/                   # Additional documentation
+├── BOM.csv                          # Bill of Materials
+├── Python scripts (*.py)            # KiCad automation scripts
+└── README.md                        # This file
 ```
 
 ## 🎨 Schematic Organization
@@ -162,7 +169,7 @@ The schematic is organized into **7 functional blocks**:
 ### Opening the Project
 
 1. Clone this repository
-2. Open `Polemo Core/Polemo Core 2/Polemo Core 2.kicad_pro` in KiCad
+2. Open `bGeigieScint/bGeigieScint.kicad_pro` in KiCad
 3. The schematic shows functional blocks with dashed rectangles
 4. The PCB has components organized by function
 
