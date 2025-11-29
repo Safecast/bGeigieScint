@@ -211,9 +211,12 @@ Components are organized into functional blocks:
 
 ## 👥 Credits
 
-**Designer**: M. Cuciuc
+**Original Designer**: Mihai Cuciuc (M. Cuciuc)
+**Original Repository**: [github.com/mihaicuciuc/pomelo](https://github.com/mihaicuciuc/pomelo)
 **Organization**: Safecast
 **Date**: 2024-2025
+
+Safecast appreciates the great work that Mihai has done and made publicly available. This project builds upon the original Pomelo design.
 
 ## 📄 License
 
