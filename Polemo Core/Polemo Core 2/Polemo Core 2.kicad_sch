@@ -5,10 +5,7 @@
 	(uuid "0190368d-9c8f-48e4-a1da-81c8419b9305")
 	(paper "A2")
 	(title_block
-		(title "bGeigieScint")
 		(date "2025-11-23")
-		(rev "1.3")
-		(company "Safecast")
 	)
 	(lib_symbols
 		(symbol "0603B103K500NT"
@@ -30806,12 +30803,6 @@
 		(uuid "9f54d84a-b7c5-481c-9a04-dfed19f8598f")
 	)
 	(junction
-		(at 378.46 363.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ffc3c66-04a5-4ae1-a76a-2b561d8539d3")
-	)
-	(junction
 		(at 410.21 349.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -31511,7 +31502,7 @@
 	)
 	(wire
 		(pts
-			(xy 444.5 373.38) (xy 444.5 363.22)
+			(xy 443.865 356.235) (xy 443.865 373.38)
 		)
 		(stroke
 			(width 0)
@@ -32178,16 +32169,6 @@
 			(type default)
 		)
 		(uuid "433b6dd5-2d9c-42c9-97b0-d6539c08ee12")
-	)
-	(wire
-		(pts
-			(xy 378.46 363.22) (xy 342.9 363.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "434f5b73-869a-43a2-bf92-f28b4f3e2c73")
 	)
 	(wire
 		(pts
@@ -33301,13 +33282,13 @@
 	)
 	(wire
 		(pts
-			(xy 444.5 363.22) (xy 378.46 363.22)
+			(xy 443.865 373.38) (xy 431.8 373.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7db2a396-f4ab-4320-a5c9-a5e58c829ef7")
+		(uuid "7e203643-1313-42d3-bca2-6e3cae5367f4")
 	)
 	(wire
 		(pts
@@ -34161,16 +34142,6 @@
 	)
 	(wire
 		(pts
-			(xy 431.8 373.38) (xy 444.5 373.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad4d40c3-3152-4bdb-8056-236a3b45b4d0")
-	)
-	(wire
-		(pts
 			(xy 482.6 327.66) (xy 494.03 327.66)
 		)
 		(stroke
@@ -34351,7 +34322,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 339.09) (xy 346.71 339.09)
+			(xy 343.535 339.09) (xy 346.71 339.09)
 		)
 		(stroke
 			(width 0)
@@ -34408,6 +34379,16 @@
 			(type default)
 		)
 		(uuid "ba90b946-cf68-4b93-b169-87afd900cb05")
+	)
+	(wire
+		(pts
+			(xy 343.535 356.235) (xy 443.865 356.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baedb563-24eb-4dc9-bbcf-657164b2226d")
 	)
 	(wire
 		(pts
@@ -35171,7 +35152,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 363.22) (xy 342.9 339.09)
+			(xy 343.535 356.235) (xy 343.535 339.09)
 		)
 		(stroke
 			(width 0)

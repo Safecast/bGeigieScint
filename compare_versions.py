@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Compare Pomelo Core V1.2 (from PDF analysis) with V1.3 (KiCad schematic)
+Compare bGeigieScint V1.2 (from PDF analysis) with V1.3 (KiCad schematic)
 """
 
 import re
@@ -181,7 +181,7 @@ def compare_versions(v13_file):
     """Compare V1.2 and V1.3"""
 
     print("="*80)
-    print("POMELO CORE VERSION COMPARISON: V1.2 → V1.3")
+    print("bGeigieScint VERSION COMPARISON: V1.2 → V1.3")
     print("="*80)
     print()
 

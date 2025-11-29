@@ -1,10 +1,10 @@
-# Pomelo Core
+# bGeigieScint
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![KiCad](https://img.shields.io/badge/KiCad-9.0-blue.svg)](https://www.kicad.org/)
 [![Version](https://img.shields.io/badge/version-1.3-green.svg)](CHANGELOG.md)
 
-**Pomelo Core** is a compact radiation detection board featuring a Silicon Photomultiplier (SiPM) based sensor system with integrated high-voltage generation, analog signal processing, and USB connectivity.
+**bGeigieScint** is a compact radiation detection board featuring a Silicon Photomultiplier (SiPM) based sensor system with integrated high-voltage generation, analog signal processing, and USB connectivity.
 
 ## 📋 Features
 
@@ -68,7 +68,7 @@ The board features an integrated **boost converter + linear regulator** topology
 ## 📁 Project Structure
 
 ```
-PomeloCore-KiCad/
+bGeigieScint/
 ├── Polemo Core/
 │   └── Polemo Core 2/
 │       ├── Polemo Core 2.kicad_pro       # KiCad project file
@@ -78,7 +78,7 @@ PomeloCore-KiCad/
 ├── BOM.csv                                # Bill of Materials
 ├── v1_2/                                  # Version 1.2 reference files
 │   └── schematic/
-│       └── PomeloCore.pdf                 # V1.2 schematic PDF
+│       └── bGeigieScint.pdf               # V1.2 schematic PDF
 └── README.md                              # This file
 ```
 
