@@ -220,9 +220,12 @@ Safecast appreciates the great work that Mihai has done and made publicly availa
 
 ## 📄 License
 
-This hardware design is open source. Please check individual files for specific license terms.
+![CC0](https://bgeigiezen.safecast.jp/wp-content/uploads/2023/07/CC_BY-SA_Andere_Wikis-300x100-1.png)
 
-Firmware and software components may have separate licenses.
+- **Hardware Design** (schematics, PCB layouts, design files): [CC0 1.0 Universal](https://creativecommons.org/publicdomain/cc0/1.0/)
+- **Firmware and Software**: [MIT License](https://opensource.org/licenses/MIT)
+
+This project is completely open source and free to use, modify, and distribute.
 
 ## 🤝 Contributing
 
