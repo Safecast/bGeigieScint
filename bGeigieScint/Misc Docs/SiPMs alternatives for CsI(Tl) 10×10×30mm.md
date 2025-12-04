@@ -1,6 +1,4 @@
-Excellent question! Here's a comparison of SiPMs with better spectral matching to CsI(Tl)'s 550nm emission:
 
----
 
 ## SiPM Options for CsI(Tl) (550nm emission peak)
 

@@ -1,6 +1,4 @@
-This is a great project! Building a CsI(Tl) scintillator with a SiPM readout is a solid approach for gamma spectroscopy. Let me gather some technical details on that specific Broadcom SiPM and scintillator coupling techniques.Now I have all the key information. Let me put together a comprehensive guide for your DIY CsI(Tl) scintillator project.
 
----
 
 ## DIY CsI(Tl) Scintillator Build Guide
 
