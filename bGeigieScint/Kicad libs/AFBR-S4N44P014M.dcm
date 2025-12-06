@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AFBR-S4N44P014M
+D Photodiode 420nm Single Element
+K
+F https://docs.broadcom.com/doc/AFBR-S4N44P014M-NUV-MT-Silicon-Photomultiplier
+$ENDCMP
+#
+#End Doc Library
