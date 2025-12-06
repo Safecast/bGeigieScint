@@ -14256,7 +14256,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ATSAML21G18B-AUT"
+		(symbol "ESP32-C3-MINI-1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -14270,7 +14270,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "ATSAML21G18B-AUT"
+			(property "Value" "ESP32-C3-MINI-1"
 				(at -1.778 34.2773 0)
 				(effects
 					(font
@@ -14280,7 +14280,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm"
+			(property "Footprint" "RF_Module:ESP32-C3-MINI-1"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14307,7 +14307,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part" "ATSAML21G18B-AUT"
+			(property "Manufacturer Part" "ESP32-C3-MINI-1-N4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14316,7 +14316,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "MICROCHIP(美国微芯)"
+			(property "Manufacturer" "Espressif Systems"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14325,7 +14325,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Part" "C2052742"
+			(property "Supplier Part" "C5180825"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14343,7 +14343,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ATSAML21G18B-AUT_0_0"
+			(symbol "ESP32-C3-MINI-1_0_0"
 				(rectangle
 					(start -12.7 31.75)
 					(end 12.7 -31.75)
@@ -40729,7 +40729,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ATSAML21G18B-AUT")
+		(lib_id "ESP32-C3-MINI-1")
 		(at 299.72 158.75 0)
 		(unit 0)
 		(exclude_from_sim no)
@@ -40747,7 +40747,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "ATSAML21G18B-AUT"
+		(property "Value" "ESP32-C3-MINI-1"
 			(at 297.942 124.4727 0)
 			(effects
 				(font
@@ -40757,7 +40757,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm"
+		(property "Footprint" "RF_Module:ESP32-C3-MINI-1"
 			(at 299.72 158.75 0)
 			(effects
 				(font
@@ -40784,7 +40784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "ATSAML21G18B-AUT"
+		(property "Manufacturer Part" "ESP32-C3-MINI-1-N4"
 			(at 299.72 158.75 0)
 			(effects
 				(font
@@ -40793,7 +40793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "MICROCHIP(美国微芯)"
+		(property "Manufacturer" "Espressif Systems"
 			(at 299.72 158.75 0)
 			(effects
 				(font
@@ -40802,7 +40802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C2052742"
+		(property "Supplier Part" "C5180825"
 			(at 299.72 158.75 0)
 			(effects
 				(font
