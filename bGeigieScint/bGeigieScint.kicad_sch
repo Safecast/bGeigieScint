@@ -14256,983 +14256,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESP32-C3-MINI-1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at -1.4732 36.6395 0)
-				(effects
-					(font
-						(face "Arial")
-						(size 1.6891 1.6891)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "ESP32-C3-MINI-1"
-				(at -1.778 34.2773 0)
-				(effects
-					(font
-						(face "Arial")
-						(size 1.6891 1.6891)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "RF_Module:ESP32-C3-MINI-1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part" "ESP32-C3-MINI-1-N4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Espressif Systems"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part" "C5180825"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "LCSC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ESP32-C3-MINI-1_0_0"
-				(rectangle
-					(start -12.7 31.75)
-					(end 12.7 -31.75)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -11.43 30.48)
-					(radius 0.254)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 29.21 0)
-					(length 2.54)
-					(name "PA00"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 26.67 0)
-					(length 2.54)
-					(name "PA01"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 24.13 0)
-					(length 2.54)
-					(name "PA02"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 21.59 0)
-					(length 2.54)
-					(name "PA03"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 19.05 0)
-					(length 2.54)
-					(name "GNDANA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 16.51 0)
-					(length 2.54)
-					(name "VDDANA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 13.97 0)
-					(length 2.54)
-					(name "PB08"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 11.43 0)
-					(length 2.54)
-					(name "PB09"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 8.89 0)
-					(length 2.54)
-					(name "PA04"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 6.35 0)
-					(length 2.54)
-					(name "PA05"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 3.81 0)
-					(length 2.54)
-					(name "PA06"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 1.27 0)
-					(length 2.54)
-					(name "PA07"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -1.27 0)
-					(length 2.54)
-					(name "PA08"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -3.81 0)
-					(length 2.54)
-					(name "PA09"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -6.35 0)
-					(length 2.54)
-					(name "PA10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -8.89 0)
-					(length 2.54)
-					(name "PA11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -11.43 0)
-					(length 2.54)
-					(name "VDDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -13.97 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -16.51 0)
-					(length 2.54)
-					(name "PB10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -19.05 0)
-					(length 2.54)
-					(name "PB11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -21.59 0)
-					(length 2.54)
-					(name "PA12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -24.13 0)
-					(length 2.54)
-					(name "PA13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -26.67 0)
-					(length 2.54)
-					(name "PA14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -29.21 0)
-					(length 2.54)
-					(name "PA15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 29.21 180)
-					(length 2.54)
-					(name "PB03"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 26.67 180)
-					(length 2.54)
-					(name "PB02"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "47"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 24.13 180)
-					(length 2.54)
-					(name "PA31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "46"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 21.59 180)
-					(length 2.54)
-					(name "PA30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "45"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 19.05 180)
-					(length 2.54)
-					(name "VDDIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "44"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 16.51 180)
-					(length 2.54)
-					(name "VSW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "43"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 13.97 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "42"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 11.43 180)
-					(length 2.54)
-					(name "VDDCORE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "41"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 8.89 180)
-					(length 2.54)
-					(name "RESET#"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 6.35 180)
-					(length 2.54)
-					(name "PA27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 3.81 180)
-					(length 2.54)
-					(name "PB23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 1.27 180)
-					(length 2.54)
-					(name "PB22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -1.27 180)
-					(length 2.54)
-					(name "VDDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -3.81 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -6.35 180)
-					(length 2.54)
-					(name "PA25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -8.89 180)
-					(length 2.54)
-					(name "PA24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -11.43 180)
-					(length 2.54)
-					(name "PA23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -13.97 180)
-					(length 2.54)
-					(name "PA22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -16.51 180)
-					(length 2.54)
-					(name "PA21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -19.05 180)
-					(length 2.54)
-					(name "PA20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -21.59 180)
-					(length 2.54)
-					(name "PA19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -24.13 180)
-					(length 2.54)
-					(name "PA18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -26.67 180)
-					(length 2.54)
-					(name "PA17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -29.21 180)
-					(length 2.54)
-					(name "PA16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "BAS21HT1G"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -23307,6 +22330,983 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "ESP32-C3-SuperMini"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U1"
+				(at -1.4732 36.6395 0)
+				(effects
+					(font
+						(face "Arial")
+						(size 1.6891 1.6891)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "ESP32-C3-SuperMini"
+				(at -1.778 34.2773 0)
+				(effects
+					(font
+						(face "Arial")
+						(size 1.6891 1.6891)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "ESP32-C3 Super Mini"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Generic/OEM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "Various"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32-C3-SuperMini_0_0"
+				(rectangle
+					(start -12.7 31.75)
+					(end 12.7 -31.75)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -11.43 30.48)
+					(radius 0.254)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 29.21 0)
+					(length 2.54)
+					(name "PA00"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 26.67 0)
+					(length 2.54)
+					(name "PA01"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 24.13 0)
+					(length 2.54)
+					(name "PA02"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 21.59 0)
+					(length 2.54)
+					(name "PA03"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 19.05 0)
+					(length 2.54)
+					(name "GNDANA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 16.51 0)
+					(length 2.54)
+					(name "VDDANA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 13.97 0)
+					(length 2.54)
+					(name "PB08"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 11.43 0)
+					(length 2.54)
+					(name "PB09"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 8.89 0)
+					(length 2.54)
+					(name "PA04"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 6.35 0)
+					(length 2.54)
+					(name "PA05"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 3.81 0)
+					(length 2.54)
+					(name "PA06"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 1.27 0)
+					(length 2.54)
+					(name "PA07"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -1.27 0)
+					(length 2.54)
+					(name "PA08"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -3.81 0)
+					(length 2.54)
+					(name "PA09"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -6.35 0)
+					(length 2.54)
+					(name "PA10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -8.89 0)
+					(length 2.54)
+					(name "PA11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -11.43 0)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -13.97 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -16.51 0)
+					(length 2.54)
+					(name "PB10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -19.05 0)
+					(length 2.54)
+					(name "PB11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -21.59 0)
+					(length 2.54)
+					(name "PA12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -24.13 0)
+					(length 2.54)
+					(name "PA13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -26.67 0)
+					(length 2.54)
+					(name "PA14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -29.21 0)
+					(length 2.54)
+					(name "PA15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 29.21 180)
+					(length 2.54)
+					(name "PB03"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 26.67 180)
+					(length 2.54)
+					(name "PB02"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 24.13 180)
+					(length 2.54)
+					(name "PA31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 21.59 180)
+					(length 2.54)
+					(name "PA30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 19.05 180)
+					(length 2.54)
+					(name "VDDIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 16.51 180)
+					(length 2.54)
+					(name "VSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 13.97 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 11.43 180)
+					(length 2.54)
+					(name "VDDCORE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 8.89 180)
+					(length 2.54)
+					(name "RESET#"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 6.35 180)
+					(length 2.54)
+					(name "PA27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 3.81 180)
+					(length 2.54)
+					(name "PB23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 1.27 180)
+					(length 2.54)
+					(name "PB22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -1.27 180)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -6.35 180)
+					(length 2.54)
+					(name "PA25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -8.89 180)
+					(length 2.54)
+					(name "PA24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -11.43 180)
+					(length 2.54)
+					(name "PA23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -13.97 180)
+					(length 2.54)
+					(name "PA22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -16.51 180)
+					(length 2.54)
+					(name "PA21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -19.05 180)
+					(length 2.54)
+					(name "PA20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -21.59 180)
+					(length 2.54)
+					(name "PA19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -24.13 180)
+					(length 2.54)
+					(name "PA18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -26.67 180)
+					(length 2.54)
+					(name "PA17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -29.21 180)
+					(length 2.54)
+					(name "PA16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GND"
 			(power)
 			(pin_numbers
@@ -31231,7 +31231,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 207.01) (xy 393.7 207.01)
+			(xy 399.415 207.01) (xy 412.1651 207.01)
 		)
 		(stroke
 			(width 0)
@@ -31288,6 +31288,16 @@
 			(type default)
 		)
 		(uuid "082b25ac-1dca-49df-bce3-12b4c3208109")
+	)
+	(wire
+		(pts
+			(xy 389.255 201.93) (xy 381 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08f284cd-b829-4be0-b6c7-d2ea363a8743")
 	)
 	(wire
 		(pts
@@ -31471,7 +31481,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 199.39) (xy 393.7 199.39)
+			(xy 399.415 199.39) (xy 412.1651 199.39)
 		)
 		(stroke
 			(width 0)
@@ -31661,6 +31671,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 168.91) (xy 389.255 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e88c28-0a08-434a-8dd3-2ea298cc5468")
+	)
+	(wire
+		(pts
 			(xy 326.39 327.66) (xy 314.96 327.66)
 		)
 		(stroke
@@ -31751,7 +31771,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 179.07) (xy 392.43 179.07)
+			(xy 399.415 179.07) (xy 410.845 179.07)
 		)
 		(stroke
 			(width 0)
@@ -31831,7 +31851,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 173.99) (xy 392.43 173.99)
+			(xy 399.415 173.99) (xy 410.845 173.99)
 		)
 		(stroke
 			(width 0)
@@ -32141,6 +32161,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.255 204.47) (xy 381 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4134606b-0da0-41ac-a10d-be00ab3fa833")
+	)
+	(wire
+		(pts
 			(xy 374.65 139.7) (xy 368.3 139.7)
 		)
 		(stroke
@@ -32291,7 +32321,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 171.45) (xy 392.43 171.45)
+			(xy 399.415 171.45) (xy 410.845 171.45)
 		)
 		(stroke
 			(width 0)
@@ -32568,6 +32598,16 @@
 			(type default)
 		)
 		(uuid "58e8639f-a9e5-4252-9fac-21c8c7cbd319")
+	)
+	(wire
+		(pts
+			(xy 378.46 166.37) (xy 389.255 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f1827e-d3e8-4a5f-8c75-202c0f34b3d0")
 	)
 	(wire
 		(pts
@@ -32861,6 +32901,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.255 196.85) (xy 381 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66f13e37-a312-4291-ab4f-4a554c539b28")
+	)
+	(wire
+		(pts
 			(xy 334.01 180.34) (xy 314.96 180.34)
 		)
 		(stroke
@@ -32931,7 +32981,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 176.53) (xy 392.43 176.53)
+			(xy 399.415 176.53) (xy 410.845 176.53)
 		)
 		(stroke
 			(width 0)
@@ -33141,7 +33191,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 168.91) (xy 392.43 168.91)
+			(xy 399.415 168.91) (xy 410.845 168.91)
 		)
 		(stroke
 			(width 0)
@@ -33531,6 +33581,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 173.99) (xy 389.255 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93697b49-4827-4e6a-83bf-76b495e80b96")
+	)
+	(wire
+		(pts
 			(xy 494.03 349.25) (xy 494.03 346.71)
 		)
 		(stroke
@@ -33831,6 +33891,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 179.07) (xy 389.255 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a05466ba-bfc7-46f9-984f-5eae646facdf")
+	)
+	(wire
+		(pts
 			(xy 156.21 83.82) (xy 162.56 83.82)
 		)
 		(stroke
@@ -33851,7 +33921,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 204.47) (xy 393.7 204.47)
+			(xy 399.415 204.47) (xy 412.1651 204.47)
 		)
 		(stroke
 			(width 0)
@@ -33878,6 +33948,16 @@
 			(type default)
 		)
 		(uuid "a14e8784-fd48-46a9-b3c2-d75181b61718")
+	)
+	(wire
+		(pts
+			(xy 378.46 171.45) (xy 389.255 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a188e19c-0023-4fc9-84c8-181dbd1ee6a4")
 	)
 	(wire
 		(pts
@@ -33991,7 +34071,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 201.93) (xy 393.7 201.93)
+			(xy 399.415 201.93) (xy 412.1651 201.93)
 		)
 		(stroke
 			(width 0)
@@ -34131,7 +34211,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 209.55) (xy 393.7 209.55)
+			(xy 399.415 209.55) (xy 412.1651 209.55)
 		)
 		(stroke
 			(width 0)
@@ -34491,6 +34571,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.255 207.01) (xy 381 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc1babc-ed24-4490-b3e4-199489e9719c")
+	)
+	(wire
+		(pts
 			(xy 439.42 63.5) (xy 435.61 63.5)
 		)
 		(stroke
@@ -34568,6 +34658,16 @@
 			(type default)
 		)
 		(uuid "c15acf65-1a32-4bf0-b8d1-62569c954874")
+	)
+	(wire
+		(pts
+			(xy 378.46 176.53) (xy 389.255 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c161090a-2a75-4e88-ab0a-c67728c034b2")
 	)
 	(wire
 		(pts
@@ -34821,6 +34921,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.255 209.55) (xy 381 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf0271e9-8626-4138-bb26-d7b6ebf4cd38")
+	)
+	(wire
+		(pts
 			(xy 76.2 339.09) (xy 86.36 339.09)
 		)
 		(stroke
@@ -34861,7 +34971,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 212.09) (xy 364.49 212.09)
+			(xy 412.1651 212.09) (xy 364.49 212.09)
 		)
 		(stroke
 			(width 0)
@@ -34918,6 +35028,16 @@
 			(type default)
 		)
 		(uuid "d625d0bb-f6b4-4213-a076-da9802acc46d")
+	)
+	(wire
+		(pts
+			(xy 389.255 199.39) (xy 381 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6812469-ae1d-44a3-9bf6-c41d18737889")
 	)
 	(wire
 		(pts
@@ -34981,7 +35101,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 196.85) (xy 393.7 196.85)
+			(xy 399.415 196.85) (xy 412.1651 196.85)
 		)
 		(stroke
 			(width 0)
@@ -35061,7 +35181,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 166.37) (xy 392.43 166.37)
+			(xy 399.415 166.37) (xy 410.845 166.37)
 		)
 		(stroke
 			(width 0)
@@ -35518,6 +35638,16 @@
 			(type default)
 		)
 		(uuid "fb6dde42-6f1d-49af-84ea-31819e34e507")
+	)
+	(wire
+		(pts
+			(xy 410.845 181.61) (xy 406.4 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdc31013-6619-40a4-9446-98f1b512952e")
 	)
 	(wire
 		(pts
@@ -39184,7 +39314,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_14")
-		(at 383.54 173.99 0)
+		(at 394.335 173.99 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -39192,7 +39322,7 @@
 		(dnp no)
 		(uuid "0d8327ea-647d-4456-ac73-9295b5cb32ac")
 		(property "Reference" "R47"
-			(at 381.2794 168.2115 0)
+			(at 386.715 173.355 0)
 			(effects
 				(font
 					(face "Arial")
@@ -39202,7 +39332,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 380.9238 170.5229 0)
+			(at 398.78 173.355 0)
 			(effects
 				(font
 					(face "Arial")
@@ -39212,7 +39342,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39221,7 +39351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39230,7 +39360,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39239,7 +39369,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39248,7 +39378,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39257,7 +39387,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39266,7 +39396,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 383.54 173.99 0)
+			(at 394.335 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39467,7 +39597,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_17")
-		(at 386.08 204.47 0)
+		(at 394.335 204.47 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -39475,7 +39605,7 @@
 		(dnp no)
 		(uuid "1010e539-3bd5-40d2-9f48-36560cc75390")
 		(property "Reference" "R53"
-			(at 383.8194 198.6915 0)
+			(at 392.0744 198.6915 0)
 			(effects
 				(font
 					(face "Arial")
@@ -39485,7 +39615,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 383.4638 201.0029 0)
+			(at 391.7188 201.0029 0)
 			(effects
 				(font
 					(face "Arial")
@@ -39495,7 +39625,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39504,7 +39634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39513,7 +39643,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39522,7 +39652,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39531,7 +39661,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39540,7 +39670,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39549,7 +39679,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 386.08 204.47 0)
+			(at 394.335 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40729,7 +40859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ESP32-C3-MINI-1")
+		(lib_id "ESP32-C3-SuperMini")
 		(at 299.72 158.75 0)
 		(unit 0)
 		(exclude_from_sim no)
@@ -46334,7 +46464,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_13")
-		(at 383.54 168.91 0)
+		(at 394.335 168.91 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -46342,7 +46472,7 @@
 		(dnp no)
 		(uuid "5c13cd5d-0c35-4ee9-99a5-587cc6260d81")
 		(property "Reference" "R43"
-			(at 381.2794 163.1315 0)
+			(at 386.715 168.275 0)
 			(effects
 				(font
 					(face "Arial")
@@ -46352,7 +46482,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 380.9238 165.4429 0)
+			(at 398.78 165.735 0)
 			(effects
 				(font
 					(face "Arial")
@@ -46362,7 +46492,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46371,7 +46501,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46380,7 +46510,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46389,7 +46519,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46398,7 +46528,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46407,7 +46537,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46416,7 +46546,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 383.54 168.91 0)
+			(at 394.335 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46683,7 +46813,7 @@
 	)
 	(symbol
 		(lib_id "KH-2.54PH180-1X7P-L11.5")
-		(at 398.78 204.47 0)
+		(at 417.2451 204.47 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -46691,7 +46821,7 @@
 		(dnp no)
 		(uuid "5dc002a5-a7ff-448e-9bac-e8f82dca2a17")
 		(property "Reference" "H2"
-			(at 395.6304 189.4205 0)
+			(at 414.0955 189.4205 0)
 			(effects
 				(font
 					(face "Arial")
@@ -46701,7 +46831,7 @@
 			)
 		)
 		(property "Value" "KH-2.54PH180-1X7P-L11.5"
-			(at 395.351 191.7827 0)
+			(at 413.8161 191.7827 0)
 			(effects
 				(font
 					(face "Arial")
@@ -46711,7 +46841,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46720,7 +46850,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46729,7 +46859,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46738,7 +46868,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KH-2.54PH180-1X7P-L11.5"
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46747,7 +46877,7 @@
 			)
 		)
 		(property "Manufacturer" "kinghelm(金航标)"
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46756,7 +46886,7 @@
 			)
 		)
 		(property "Supplier Part" "C2932700"
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46765,7 +46895,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 398.78 204.47 0)
+			(at 417.2451 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48202,7 +48332,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_18")
-		(at 383.54 171.45 0)
+		(at 394.335 171.45 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -48210,7 +48340,7 @@
 		(dnp no)
 		(uuid "712b94f9-8bb5-4d16-84c0-cba508effe20")
 		(property "Reference" "R50"
-			(at 381.2794 165.6715 0)
+			(at 386.715 170.815 0)
 			(effects
 				(font
 					(face "Arial")
@@ -48220,7 +48350,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 380.9238 167.9829 0)
+			(at 398.78 170.815 0)
 			(effects
 				(font
 					(face "Arial")
@@ -48230,7 +48360,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48239,7 +48369,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48248,7 +48378,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48257,7 +48387,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48266,7 +48396,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48275,7 +48405,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48284,7 +48414,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 383.54 171.45 0)
+			(at 394.335 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48971,7 +49101,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_16")
-		(at 386.08 201.93 0)
+		(at 394.335 201.93 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -48979,7 +49109,7 @@
 		(dnp no)
 		(uuid "7a268f71-ea44-483f-aecb-4663deccc13c")
 		(property "Reference" "R54"
-			(at 383.8194 196.1515 0)
+			(at 392.0744 196.1515 0)
 			(effects
 				(font
 					(face "Arial")
@@ -48989,7 +49119,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 383.4638 198.4629 0)
+			(at 391.7188 198.4629 0)
 			(effects
 				(font
 					(face "Arial")
@@ -48999,7 +49129,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49008,7 +49138,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49017,7 +49147,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49026,7 +49156,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49035,7 +49165,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49044,7 +49174,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49053,7 +49183,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 386.08 201.93 0)
+			(at 394.335 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50261,7 +50391,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_12")
-		(at 386.08 199.39 0)
+		(at 394.335 199.39 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -50269,7 +50399,7 @@
 		(dnp no)
 		(uuid "868d1ca9-bc39-464a-9fda-6bac513b01e0")
 		(property "Reference" "R48"
-			(at 383.8194 193.6115 0)
+			(at 392.0744 193.6115 0)
 			(effects
 				(font
 					(face "Arial")
@@ -50279,7 +50409,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 383.4638 195.9229 0)
+			(at 391.7188 195.9229 0)
 			(effects
 				(font
 					(face "Arial")
@@ -50289,7 +50419,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50298,7 +50428,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50307,7 +50437,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50316,7 +50446,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50325,7 +50455,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50334,7 +50464,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50343,7 +50473,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 386.08 199.39 0)
+			(at 394.335 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52659,7 +52789,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_9")
-		(at 386.08 207.01 0)
+		(at 394.335 207.01 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -52667,7 +52797,7 @@
 		(dnp no)
 		(uuid "a1b53a32-520d-4997-b142-6ac81bc267d6")
 		(property "Reference" "R45"
-			(at 383.8194 201.2315 0)
+			(at 392.0744 201.2315 0)
 			(effects
 				(font
 					(face "Arial")
@@ -52677,7 +52807,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 383.4638 203.5429 0)
+			(at 391.7188 203.5429 0)
 			(effects
 				(font
 					(face "Arial")
@@ -52687,7 +52817,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52696,7 +52826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52705,7 +52835,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52714,7 +52844,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52723,7 +52853,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52732,7 +52862,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52741,7 +52871,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 386.08 207.01 0)
+			(at 394.335 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52873,7 +53003,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_8")
-		(at 386.08 209.55 0)
+		(at 394.335 209.55 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -52881,7 +53011,7 @@
 		(dnp no)
 		(uuid "a2ef1171-753f-40bd-b510-79286eff1c48")
 		(property "Reference" "R46"
-			(at 383.8194 203.7715 0)
+			(at 392.0744 203.7715 0)
 			(effects
 				(font
 					(face "Arial")
@@ -52891,7 +53021,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 383.4638 206.0829 0)
+			(at 391.7188 206.0829 0)
 			(effects
 				(font
 					(face "Arial")
@@ -52901,7 +53031,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52910,7 +53040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52919,7 +53049,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52928,7 +53058,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52937,7 +53067,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52946,7 +53076,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52955,7 +53085,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 386.08 209.55 0)
+			(at 394.335 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53907,7 +54037,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_15")
-		(at 383.54 176.53 0)
+		(at 394.335 176.53 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -53915,7 +54045,7 @@
 		(dnp no)
 		(uuid "add04eac-36b3-4c15-b9e2-bc4b220415ab")
 		(property "Reference" "R49"
-			(at 381.2794 170.7515 0)
+			(at 386.715 175.895 0)
 			(effects
 				(font
 					(face "Arial")
@@ -53925,7 +54055,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 380.9238 173.0629 0)
+			(at 398.78 175.895 0)
 			(effects
 				(font
 					(face "Arial")
@@ -53935,7 +54065,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53944,7 +54074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53953,7 +54083,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53962,7 +54092,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53971,7 +54101,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53980,7 +54110,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53989,7 +54119,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 383.54 176.53 0)
+			(at 394.335 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54390,7 +54520,7 @@
 	)
 	(symbol
 		(lib_id "GND")
-		(at 392.43 181.61 0)
+		(at 406.4 181.61 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -54398,7 +54528,7 @@
 		(dnp no)
 		(uuid "b0673bd3-165a-402c-b8ec-f50a370adce0")
 		(property "Reference" "#PWR0183"
-			(at 392.43 181.61 0)
+			(at 406.4 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54407,7 +54537,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 389.128 188.214 0)
+			(at 403.098 188.214 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -54417,7 +54547,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 392.43 181.61 0)
+			(at 406.4 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54426,7 +54556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 392.43 181.61 0)
+			(at 406.4 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54435,7 +54565,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 392.43 181.61 0)
+			(at 406.4 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55616,7 +55746,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_19")
-		(at 383.54 179.07 0)
+		(at 394.335 179.07 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -55624,7 +55754,7 @@
 		(dnp no)
 		(uuid "bd267a5a-3e49-4ffb-b9a8-acc0be3b355e")
 		(property "Reference" "R51"
-			(at 381.2794 173.2915 0)
+			(at 386.715 178.435 0)
 			(effects
 				(font
 					(face "Arial")
@@ -55634,7 +55764,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 380.9238 175.6029 0)
+			(at 398.78 178.435 0)
 			(effects
 				(font
 					(face "Arial")
@@ -55644,7 +55774,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55653,7 +55783,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55662,7 +55792,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55671,7 +55801,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55680,7 +55810,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55689,7 +55819,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55698,7 +55828,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 383.54 179.07 0)
+			(at 394.335 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55830,7 +55960,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_10")
-		(at 386.08 196.85 0)
+		(at 394.335 196.85 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -55838,7 +55968,7 @@
 		(dnp no)
 		(uuid "be232025-6902-4603-a7b6-3314305a65f9")
 		(property "Reference" "R52"
-			(at 383.8194 191.0715 0)
+			(at 392.0744 191.0715 0)
 			(effects
 				(font
 					(face "Arial")
@@ -55848,7 +55978,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 383.4638 193.3829 0)
+			(at 391.7188 193.3829 0)
 			(effects
 				(font
 					(face "Arial")
@@ -55858,7 +55988,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55867,7 +55997,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55876,7 +56006,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55885,7 +56015,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55894,7 +56024,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55903,7 +56033,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55912,7 +56042,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 386.08 196.85 0)
+			(at 394.335 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61074,7 +61204,7 @@
 	)
 	(symbol
 		(lib_id "KH-2.54PH180-1X7P-L11.5_1")
-		(at 397.51 173.99 0)
+		(at 415.925 173.99 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -61082,7 +61212,7 @@
 		(dnp no)
 		(uuid "f2a786d3-5dda-46f4-b9f3-aaba7890bb48")
 		(property "Reference" "H3"
-			(at 394.3604 158.9405 0)
+			(at 412.7754 158.9405 0)
 			(effects
 				(font
 					(face "Arial")
@@ -61092,7 +61222,7 @@
 			)
 		)
 		(property "Value" "KH-2.54PH180-1X7P-L11.5"
-			(at 394.081 161.3027 0)
+			(at 412.496 161.3027 0)
 			(effects
 				(font
 					(face "Arial")
@@ -61102,7 +61232,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61111,7 +61241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61120,7 +61250,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61129,7 +61259,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KH-2.54PH180-1X7P-L11.5"
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61138,7 +61268,7 @@
 			)
 		)
 		(property "Manufacturer" "kinghelm(金航标)"
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61147,7 +61277,7 @@
 			)
 		)
 		(property "Supplier Part" "C2932700"
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61156,7 +61286,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 397.51 173.99 0)
+			(at 415.925 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61478,7 +61608,7 @@
 	)
 	(symbol
 		(lib_id "0603WAF1001T5E_11")
-		(at 383.54 166.37 0)
+		(at 394.335 166.37 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -61486,7 +61616,7 @@
 		(dnp no)
 		(uuid "f898fc41-6328-418c-ba7f-43cff187ce8f")
 		(property "Reference" "R44"
-			(at 381.2794 160.5915 0)
+			(at 386.715 165.735 0)
 			(effects
 				(font
 					(face "Arial")
@@ -61496,7 +61626,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 380.9238 162.9029 0)
+			(at 398.78 168.275 0)
 			(effects
 				(font
 					(face "Arial")
@@ -61506,7 +61636,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61515,7 +61645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61524,7 +61654,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61533,7 +61663,7 @@
 			)
 		)
 		(property "Manufacturer Part" "0603WAF1001T5E"
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61542,7 +61672,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61551,7 +61681,7 @@
 			)
 		)
 		(property "Supplier Part" "C21190"
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61560,7 +61690,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 383.54 166.37 0)
+			(at 394.335 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
