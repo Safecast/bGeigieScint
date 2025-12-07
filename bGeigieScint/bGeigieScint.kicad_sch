@@ -40877,7 +40877,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "ESP32-C3-MINI-1"
+		(property "Value" "ESP32-C3-SuperMini"
 			(at 297.942 124.4727 0)
 			(effects
 				(font
@@ -40887,7 +40887,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "RF_Module:ESP32-C3-MINI-1"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 			(at 299.72 158.75 0)
 			(effects
 				(font
@@ -40914,7 +40914,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "ESP32-C3-MINI-1-N4"
+		(property "Manufacturer Part" "ESP32-C3 Super Mini"
 			(at 299.72 158.75 0)
 			(effects
 				(font
@@ -40923,7 +40923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Espressif Systems"
+		(property "Manufacturer" "Generic/OEM"
 			(at 299.72 158.75 0)
 			(effects
 				(font
@@ -40932,7 +40932,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C5180825"
+		(property "Supplier Part" "Various"
 			(at 299.72 158.75 0)
 			(effects
 				(font
