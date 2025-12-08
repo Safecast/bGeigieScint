@@ -152,7 +152,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "1f7c83d8-f6c5-4ad9-a60e-fff8b3ee7b93")
-		(at 156.3425 92.39)
+		(at 156.3425 87.96)
 		(descr "SOT, 5 Pin (JEDEC MO-178 Var AA https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U2"
@@ -497,7 +497,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "3aa32e1f-1516-417a-81fd-813d3dfc618a")
-		(at 134.62 102.6317)
+		(at 136.21 99.06)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C6"
@@ -696,7 +696,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "8052d5e4-bb61-46ad-8976-8077dea41ec3")
-		(at 134.62 84.2967)
+		(at 136.21 86.36)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
@@ -895,7 +895,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "b643d4b0-b710-4d9a-b0af-cb5a2dc351eb")
-		(at 134.62 96.52)
+		(at 136.21 93.98)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
@@ -1094,7 +1094,7 @@
 	(footprint "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 		(layer "F.Cu")
 		(uuid "ce6bc24b-d2f4-4759-83ca-43ce001bbf9b")
-		(at 156.5925 100.95)
+		(at 156.5925 96.52)
 		(descr "WSON, 6 Pin (http://www.ti.com/lit/ds/symlink/tps61040.pdf#page=35), generated with kicad-footprint-generator ipc_noLead_generator.py")
 		(tags "WSON NoLead")
 		(property "Reference" "U1"
@@ -1421,7 +1421,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "ec6796ec-2488-428e-bf5a-900b251e3529")
-		(at 134.62 90.4083)
+		(at 136.21 90.4083)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
@@ -1994,16 +1994,89 @@
 			)
 		)
 	)
-	(gr_rect
-		(start 129.54 78.66)
-		(end 162.56 106.6)
+	(gr_line
+		(start 163.83 83.74)
+		(end 163.83 101.68)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
-		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "951a8a18-d0c7-41c6-87ab-209eba7ee6b4")
+		(uuid "207b629f-55fb-4f9d-be20-fe196f2d9115")
+	)
+	(gr_arc
+		(start 135.81 106.68)
+		(mid 132.274466 105.215534)
+		(end 130.81 101.68)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "46a1c8b6-9843-42b7-b736-69a20e6cd75f")
+	)
+	(gr_line
+		(start 158.83 106.68)
+		(end 135.81 106.68)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "8cea7eee-f06a-478c-a893-5b897b8b2059")
+	)
+	(gr_arc
+		(start 158.83 78.74)
+		(mid 162.365534 80.204466)
+		(end 163.83 83.74)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "bcb9bafa-cacc-40f9-b788-20a098d73368")
+	)
+	(gr_line
+		(start 130.81 101.68)
+		(end 130.81 83.74)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c5f366f5-486f-46c9-a09e-65904fdb6c34")
+	)
+	(gr_line
+		(start 135.81 78.74)
+		(end 158.83 78.74)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d73d7fde-4bae-468f-a207-5f181638e1c7")
+	)
+	(gr_arc
+		(start 163.83 101.68)
+		(mid 162.365534 105.215534)
+		(end 158.83 106.68)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "daae6a73-6c8a-47e1-bb1b-81e37168604d")
+	)
+	(gr_arc
+		(start 130.81 83.74)
+		(mid 132.274466 80.204466)
+		(end 135.81 78.74)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "db2e1dda-c93a-40f9-8469-019d500b45e0")
 	)
 	(zone
 		(net 1)
