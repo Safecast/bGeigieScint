@@ -1251,11 +1251,16 @@ void unused_pins_init(void) {
   // All pins output low
   pin_conf.direction = PORT_PIN_DIR_OUTPUT;
 
-  port_pin_set_config(PIN_PA30, &pin_conf);
-  port_pin_set_output_level(PIN_PA30, 1);
+  // CRITICAL: DO NOT reconfigure PA30/PA31 during development!
+  // PA30 = SWCLK (SWD Clock) and PA31 = SWDIO (SWD Data)
+  // Reconfiguring these pins as GPIO will brick the device by disabling SWD debugging.
+  // Only enable these lines in production firmware if you have an alternative recovery method.
 
-  port_pin_set_config(PIN_PA31, &pin_conf);
-  port_pin_set_output_level(PIN_PA31, 1);
+  // port_pin_set_config(PIN_PA30, &pin_conf);  // PA30 = SWCLK - DO NOT DISABLE SWD
+  // port_pin_set_output_level(PIN_PA30, 1);
+
+  // port_pin_set_config(PIN_PA31, &pin_conf);  // PA31 = SWDIO - DO NOT DISABLE SWD
+  // port_pin_set_output_level(PIN_PA31, 1);
 
   // USB pins input
   pin_conf.direction = PORT_PIN_DIR_INPUT;
@@ -2102,235 +2107,44 @@ static void apply_parameters(void) {
   }
 }
 
+// ============================================================================
+// SIMPLE LED BLINK TEST - PA27
+// This is a minimal test to verify the board is working after recovery
+// The LED on PA27 will blink at approximately 1 Hz (500ms ON, 500ms OFF)
+// ============================================================================
 int main(void) {
+  // Initialize system clocks and basic peripherals
   system_init();
 
-  power_config(); // ?? No idea if this actually does anything
-
+  // Configure PA27 (LED) as output
   struct port_config pin_conf;
   port_get_config_defaults(&pin_conf);
-
-  // LED
   pin_conf.direction = PORT_PIN_DIR_OUTPUT;
   port_pin_set_config(PIN_PA27, &pin_conf);
-  port_pin_set_output_level(PIN_PA27, 1);
 
-  // Reset cap
-  pin_conf.direction = PORT_PIN_DIR_OUTPUT;
-  port_pin_set_config(PIN_PA08, &pin_conf);
-  port_pin_set_output_level(PIN_PA08, 0);
+  // Start with LED OFF
+  port_pin_set_output_level(PIN_PA27, 0);
 
-  // USBVBUS
-  pin_conf.direction = PORT_PIN_DIR_INPUT;
-  pin_conf.input_pull = PORT_PIN_PULL_NONE;
-  port_pin_set_config(PIN_PA27, &pin_conf);
+  // Simple delay counter variable
+  volatile uint32_t delay;
 
-  // AFE_EN
-  pin_conf.direction = PORT_PIN_DIR_OUTPUT;
-  port_pin_set_config(PIN_PA14, &pin_conf);
-  port_pin_set_output_level(PIN_PA14, 1);
-
-  // PeakDet disable
-  pin_conf.direction = PORT_PIN_DIR_OUTPUT;
-  port_pin_set_config(PIN_PA15, &pin_conf);
-  port_pin_set_output_level(PIN_PA15, 0);
-
-  // Ramp generator enable
-  pin_conf.direction = PORT_PIN_DIR_OUTPUT;
-  port_pin_set_config(PIN_PA03, &pin_conf);
-  port_pin_set_output_level(PIN_PA03, 0);
-
-  // Ramp generator trigger
-  pin_conf.direction = PORT_PIN_DIR_OUTPUT;
-  port_pin_set_config(PIN_PA11, &pin_conf);
-  port_pin_set_output_level(PIN_PA11, 0);
-
-  // Ramp generator input
-  pin_conf.direction = PORT_PIN_DIR_INPUT;
-  port_pin_set_config(PIN_PA04, &pin_conf);
-
-  // Trigger input
-  pin_conf.direction = PORT_PIN_DIR_INPUT;
-  port_pin_set_config(PIN_PA18, &pin_conf);
-
-  // Synchronizer input
-  pin_conf.direction = PORT_PIN_DIR_INPUT;
-  port_pin_set_config(PIN_PB08, &pin_conf);
-
-  // PeakDet EN input (2nd trigger)
-  pin_conf.direction = PORT_PIN_DIR_INPUT;
-  port_pin_set_config(PIN_PB03, &pin_conf);
-
-  // HV crowbar. Active low, to engage it when board power is switched off
-  pin_conf.direction = PORT_PIN_DIR_OUTPUT;
-  port_pin_set_config(PIN_PA21, &pin_conf);
-  port_pin_set_output_level(PIN_PA21, 1);
-
-  // HV load measurement
-  pin_conf.direction = PORT_PIN_DIR_INPUT;
-  pin_conf.input_pull = PORT_PIN_PULL_NONE;
-  port_pin_set_config(PIN_PB10, &pin_conf);
-
-  // Paranoid, just make sure HV PWM starts off
-  hvBoost = false;
-  hv_disable();
-
-  // Clear peak detector capacitor
-  port_pin_set_output_level(PIN_PA08, 1);
-  nop();
-  nop();
-  nop();
-  nop();
-  nop(); // 5us
-  nop();
-  nop();
-  nop();
-  nop();
-  nop(); // 5us
-  nop();
-  nop();
-  nop();
-  nop();
-  nop(); // 5us
-  nop();
-  nop();
-  nop();
-  nop();
-  nop(); // 5us
-  nop();
-  nop();
-  nop();
-  nop();
-  nop(); // 5us
-  nop();
-  nop();
-  nop();
-  nop();
-  nop(); // 5us
-  port_pin_set_output_level(PIN_PA08, 0);
-
-  unused_pins_init();
-
-  // MCHP: host_uart_config.generator_source = GCLK_GENERATOR_3; added to init()
-
-  rtc_init_gamma();
-  eic_init();
-
-  configure_nvm();
-
-  isr_vbus = false;
-  can_sleep = true;
-  daq_enabled = false;
-  temp_comp_run = false;
-
-  gammaDaqRun = false;
-  gammaCoincidence = false;
-  gammaSyncTrig = false;
-  listOut = 0;
-
-  hvloadTime = 0;
-
-  // Start with USB enabled. Will be switched off by main loop if required
-  usb_connected = true;
-  main_clock_select_dfll();
-  udc_start();
-
-  uart_init();
-  adc_init_gamma();
-  coincidences_reset();
-  timer_init_gamma();
-
-  // Do this to have a consistent state
-  dac_init_gamma_hv();
-  dac_chan_write(
-      &dac_instance_app, DAC_CHANNEL_0,
-      4095); // Immediately set a value that drives HV as low as possible
-  dac_chan_write(&dac_instance_app, DAC_CHANNEL_1, 4095);
-  daq_enabled = true;
-  pomelo_off();
-
-  i2c_init();
-
-  load_parameters();
-  apply_parameters();
-
-  temp_init();
-
+  // Main blink loop
   while (1) {
-    if (usb_connected) {
-      usb_data_handler();
-    }
+    // Turn LED ON
+    port_pin_set_output_level(PIN_PA27, 1);
 
-    uart_data_handler();
-
-    if (listOut != 0) {
-      if (((gammaFifoTail + 1) % LIST_FIFO_LEN) != gammaFifoHead) {
-        gammaFifoTail++;
-        if (gammaFifoTail >= LIST_FIFO_LEN) {
-          gammaFifoTail = 0;
-        }
-        if ((listOut & (1 << LIST_UART_PULSE)) != 0)
-          uart_tx(&gammaPulseChar, 1);
-        if ((listOut & (1 << LIST_UART_ENERGY)) != 0)
-          pomelo_sprintf(1, "%d\n", gammaFifo[gammaFifoTail]);
-        if ((listOut & (1 << LIST_UART_ENERGY_TS)) != 0)
-          pomelo_sprintf(1, "%lu,%d\n", gammaFifoTs[gammaFifoTail],
-                         gammaFifo[gammaFifoTail]);
-        if ((listOut & (1 << LIST_USB_PULSE)) != 0)
-          pomelo_sprintf(0, "%c", gammaPulseChar);
-        if ((listOut & (1 << LIST_USB_ENERGY)) != 0)
-          pomelo_sprintf(0, "%d\n", gammaFifo[gammaFifoTail]);
-        if ((listOut & (1 << LIST_USB_ENERGY_TS)) != 0)
-          pomelo_sprintf(0, "%lu,%d\n", gammaFifoTs[gammaFifoTail],
-                         gammaFifo[gammaFifoTail]);
-
-        can_sleep = false;
-      } else {
-        can_sleep = true;
-      }
-    }
-
-    if (isr_vbus) {
-      // Switch on USB and turn off low power mode
-      usb_connected = true;
-      cmdState = STATE_CMD_IDLE;
-      main_clock_select_dfll();
-      udc_start();
-      isr_vbus = false;
-    }
-
-    if ((port_pin_get_input_level(PIN_PA27) == 0) && usb_connected) {
-      // VBUS line is low, USB unplugged. Switch off USB and enable low power
-      // mode
-      usb_connected = false;
-      cmdState = STATE_CMD_IDLE;
-      // MCHP: Add "usb_disable(&usb_device);" at the end of udd_disable() in
-      // usb_device_udd.c
-      udc_stop();
-      main_clock_select_osc16m();
-      unused_pins_init();
-    }
-
-    if (temp_comp_run) {
-      if (daq_enabled)
-        update_hv_temp(false);
-      temp_comp_run = false;
-    }
-
-    if (gammaSyncTrig) {
-      port_pin_set_output_level(PIN_PB02, 1);
+    // Delay approximately 500ms
+    // At 16MHz, this gives roughly 500ms delay
+    for (delay = 0; delay < 800000; delay++) {
       nop();
-      nop();
-      nop();
-      nop();
-      nop(); // 5us. Aaaactually almost nothing
-      port_pin_set_output_level(PIN_PB02, 0);
-      gammaSyncTrig = false;
     }
 
-    if (can_sleep && !usb_connected) {
-      system_set_sleepmode(SYSTEM_SLEEPMODE_STANDBY);
-      system_sleep();
+    // Turn LED OFF
+    port_pin_set_output_level(PIN_PA27, 0);
+
+    // Delay approximately 500ms
+    for (delay = 0; delay < 800000; delay++) {
+      nop();
     }
   }
 }
