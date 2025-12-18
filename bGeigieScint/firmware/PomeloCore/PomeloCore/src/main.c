@@ -2108,15 +2108,53 @@ static void apply_parameters(void) {
 }
 
 // ============================================================================
-// SIMPLE LED BLINK TEST - PA27
-// This is a minimal test to verify the board is working after recovery
-// The LED on PA27 will blink at approximately 1 Hz (500ms ON, 500ms OFF)
+// LED BLINK TEST + UART STARTUP MESSAGE
+// - LED on PA27 blinks at approximately 1 Hz (500ms ON, 500ms OFF)
+// - Sends "Startup from bGeigieScint" via UART (SERCOM4 on PB10/PB11)
+// - UART: 921600 baud, connects to USB bridge
 // ============================================================================
+
+// Simple function to send a string via UART
+void uart_send_string(const char* str) {
+  while (*str) {
+    // Wait for TX buffer to be ready
+    while (!(SERCOM4->USART.INTFLAG.bit.DRE));
+    // Send character
+    SERCOM4->USART.DATA.reg = *str++;
+  }
+  // Wait for transmission to complete
+  while (!(SERCOM4->USART.INTFLAG.bit.TXC));
+}
+
 int main(void) {
   // Initialize system clocks and basic peripherals
   system_init();
 
-  // Configure PA27 (LED) as output
+  // ========== UART Initialization (SERCOM4 on PB10/PB11) ==========
+  // Configure UART pins: PB10 = TX (PAD2), PB11 = RX (PAD3)
+  struct usart_config uart_config;
+  usart_get_config_defaults(&uart_config);
+  uart_config.mux_setting = USART_RX_3_TX_2_XCK_3;
+  uart_config.pinmux_pad0 = PINMUX_UNUSED;
+  uart_config.pinmux_pad1 = PINMUX_UNUSED;
+  uart_config.pinmux_pad2 = PINMUX_PB10D_SERCOM4_PAD2;  // TX
+  uart_config.pinmux_pad3 = PINMUX_PB11D_SERCOM4_PAD3;  // RX
+  uart_config.baudrate = 921600;
+
+  stdio_serial_init(&app_uart_module, SERCOM4, &uart_config);
+  usart_enable(&app_uart_module);
+  usart_enable_transceiver(&app_uart_module, USART_TRANSCEIVER_TX);
+
+  // Small delay to ensure UART is ready
+  volatile uint32_t delay;
+  for (delay = 0; delay < 10000; delay++) {
+    nop();
+  }
+
+  // Send startup message
+  uart_send_string("Startup from bGeigieScint\r\n");
+
+  // ========== LED Configuration (PA27) ==========
   struct port_config pin_conf;
   port_get_config_defaults(&pin_conf);
   pin_conf.direction = PORT_PIN_DIR_OUTPUT;
@@ -2125,16 +2163,12 @@ int main(void) {
   // Start with LED OFF
   port_pin_set_output_level(PIN_PA27, 0);
 
-  // Simple delay counter variable
-  volatile uint32_t delay;
-
-  // Main blink loop
+  // ========== Main Blink Loop ==========
   while (1) {
     // Turn LED ON
     port_pin_set_output_level(PIN_PA27, 1);
 
     // Delay approximately 500ms
-    // At 16MHz, this gives roughly 500ms delay
     for (delay = 0; delay < 800000; delay++) {
       nop();
     }
