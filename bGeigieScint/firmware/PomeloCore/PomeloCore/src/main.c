@@ -2277,6 +2277,20 @@ int main(void)
 	udc_start();
 
 	uart_init();
+
+	// Delay to ensure UART is ready (same as blink test)
+	volatile uint32_t delay;
+	for (delay = 0; delay < 100000; delay++) {
+		nop();
+	}
+
+	// Send startup message for debugging
+	while (!(SERCOM4->USART.INTFLAG.bit.DRE));
+	const char *msg = "PomeloCore Started\r\n";
+	while (*msg) {
+		SERCOM4->USART.DATA.reg = *msg++;
+		while (!(SERCOM4->USART.INTFLAG.bit.DRE));
+	}
 	adc_init_gamma();
 	coincidences_reset();
 	timer_init_gamma();
