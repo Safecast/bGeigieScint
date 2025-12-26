@@ -1,6 +1,10 @@
-#include <asf.h>
+#ifndef NVM_PARAMS_H
+#define NVM_PARAMS_H
 
-typedef struct core_params
+#include <stdint.h>
+#include <stdbool.h>
+
+struct core_params
 {
 	uint8_t version;
 	float vDac[2];		// HVDAC = vdac[0] + vdac[1] * Vdesired[V]
@@ -12,7 +16,7 @@ typedef struct core_params
 	bool sys_coincidence;
 };
 
-typedef struct core_params_old
+struct core_params_old
 {
 	float vdac[2];		// HVDAC = vdac[0] + vdac[1] * Vdesired[V]
 	uint16_t threshold;
@@ -24,7 +28,7 @@ typedef struct core_params_old
 };
 
 
-typedef struct physics_params
+struct physics_params
 {
 	uint8_t version;
 	float sipm_vMin;
@@ -38,7 +42,7 @@ typedef struct physics_params
 };
 
 
-typedef struct physics_params_old
+struct physics_params_old
 {
 	float sipm_vMin;
 	float sipm_vMax;
@@ -50,5 +54,7 @@ typedef struct physics_params_old
 	uint8_t tempType;		// 1: TMP116, 2: TMP451
 	uint8_t initialized;
 };
+
+#endif // NVM_PARAMS_H
 
 

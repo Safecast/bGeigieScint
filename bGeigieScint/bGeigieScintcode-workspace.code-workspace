@@ -1,7 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "firmware/PomeloCore"
 		}
-	]
+	],
+	"settings": {
+		"mplab.mplab-importer.ignorePatterns": [
+			"firmware/PomeloCore/PomeloCore/PomeloCore.cproj"
+		]
+	}
 }
