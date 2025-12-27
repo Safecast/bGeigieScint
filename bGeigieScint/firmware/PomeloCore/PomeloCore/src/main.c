@@ -1329,11 +1329,16 @@ void unused_pins_init(void)
 	// All pins output low
 	pin_conf.direction  = PORT_PIN_DIR_OUTPUT;
 
-	port_pin_set_config(PIN_PA30, &pin_conf);
-	port_pin_set_output_level(PIN_PA30, 1);
+	// CRITICAL: DO NOT reconfigure PA30/PA31 during development!
+	// PA30 = SWCLK (SWD Clock) and PA31 = SWDIO (SWD Data)
+	// Reconfiguring these pins as GPIO will brick the device by disabling SWD debugging.
+	// Only enable these lines in production firmware if you have an alternative recovery method.
 
-	port_pin_set_config(PIN_PA31, &pin_conf);
-	port_pin_set_output_level(PIN_PA31, 1);
+	// port_pin_set_config(PIN_PA30, &pin_conf);  // PA30 = SWCLK - DO NOT DISABLE SWD
+	// port_pin_set_output_level(PIN_PA30, 1);
+
+	// port_pin_set_config(PIN_PA31, &pin_conf);  // PA31 = SWDIO - DO NOT DISABLE SWD
+	// port_pin_set_output_level(PIN_PA31, 1);
 
 	// USB pins input
 	pin_conf.direction  = PORT_PIN_DIR_INPUT;
@@ -2272,6 +2277,20 @@ int main(void)
 	udc_start();
 
 	uart_init();
+
+	// Delay to ensure UART is ready (same as blink test)
+	volatile uint32_t delay;
+	for (delay = 0; delay < 100000; delay++) {
+		nop();
+	}
+
+	// Send startup message for debugging
+	while (!(SERCOM4->USART.INTFLAG.bit.DRE));
+	const char *msg = "PomeloCore Started\r\n";
+	while (*msg) {
+		SERCOM4->USART.DATA.reg = *msg++;
+		while (!(SERCOM4->USART.INTFLAG.bit.DRE));
+	}
 	adc_init_gamma();
 	coincidences_reset();
 	timer_init_gamma();
