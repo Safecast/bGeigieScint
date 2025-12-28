@@ -24,25 +24,29 @@
 #define PIN_DAC_HV       20   // HV Bias (PWM + RC Filter)
 #define PIN_DAC_THRESH   21   // Trigger Level (PWM + RC Filter)
 
-// ===== PSEUDO-DAC (PWM) CONFIG =====
-const int dac_frequency = 20000; // 20kHz
-const int dac_resolution = 12;   // 0-4095 (Matches original SAML21 resolution)
+// ===== SIGMA-DELTA (SDM) CONFIG =====
+// Sigma-Delta is superior to PWM for analog generation as it concentrates
+// noise at higher frequencies, requiring only a simple 1R + 1C filter.
 
 void hal_setup_dac() {
-    // Setup PWM channels
-    ledcSetup(0, dac_frequency, dac_resolution); // Channel 0 -> HV
-    ledcAttachPin(PIN_DAC_HV, 0);
+    // Channel 0 -> HV (GPIO 20)
+    sigmaDeltaSetup(0, 1000000); // 1MHz high-speed toggle
+    sigmaDeltaAttachPin(PIN_DAC_HV, 0);
+    sigmaDeltaWrite(0, 0);
 
-    ledcSetup(1, dac_frequency, dac_resolution); // Channel 1 -> Threshold
-    ledcAttachPin(PIN_DAC_THRESH, 1);
+    // Channel 1 -> Threshold (GPIO 21)
+    sigmaDeltaSetup(1, 1000000);
+    sigmaDeltaAttachPin(PIN_DAC_THRESH, 1);
+    sigmaDeltaWrite(1, 0);
 }
 
-void hal_set_hv_bias(uint16_t value) {
-    ledcWrite(0, value);
+void hal_set_hv_bias(uint8_t value) {
+    // Sigma-Delta on ESP32 is 8-bit (0-255)
+    sigmaDeltaWrite(0, value);
 }
 
-void hal_set_threshold(uint16_t value) {
-    ledcWrite(1, value);
+void hal_set_threshold(uint8_t value) {
+    sigmaDeltaWrite(1, value);
 }
 
 // ===== INTERNAL FLASH STORAGE (Preferences) =====

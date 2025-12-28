@@ -170,47 +170,47 @@ This mapping is optimized for the **ESP32-C3 Super Mini** module, which features
 ```
 
 
-### Alternative: Internal Pseudo-DAC (PWM/PDM)
+### Minimalist Analog: Sigma-Delta Modulation (SDM)
 
-If an external I2C DAC chip (like MCP4728) is not available, the ESP32-C3 can generate analog voltages using **PWM** or **PDM** paired with an external **RC Low-Pass Filter**.
+Instead of a noisy PWM, the ESP32-C3 can use its internal **Sigma-Delta Modulator**. This method pushes the noise into extremely high frequencies (1MHz+), allowing you to get a clean analog voltage with just one resistor and one capacitor.
 
 | Function | SAML21 Pin | **Super Mini GPIO** | Method |
 | :--- | :--- | :--- | :--- |
-| **HV Bias Control** | PA02 | **20** | LEDC PWM (High Res) |
-| **Trigger Threshold**| PA05 | **21** | LEDC PWM (High Res) |
+| **HV Bias Control** | PA02 | **20** | Sigma-Delta (8-bit) |
+| **Trigger Threshold**| PA05 | **21** | Sigma-Delta (8-bit) |
 
-#### Hardware Filter Circuit
-To minimize voltage ripple—which is critical for radiation spectroscopy—use a **Double RC Filter** on the output of GPIO 20/21:
+#### Hardware Filter Circuit (1R + 1C)
+Because Sigma-Delta is so fast, a simple single-stage filter is usually sufficient for non-critical builds:
 
 ```text
-GPIO Pin ────┬───[ 10k Ω ]───┬───[ 10k Ω ]───┬─── ANALOG OUT
-             │               │               │
-           [ 1µF ]         [ 1µF ]         [ 0.1µF ]
-             │               │               │
-            GND             GND             GND
+GPIO Pin ────[ 10k Ω ]──┬── ANALOG OUT
+                        │
+                      [ 0.1µF ]
+                        │
+                       GND
 ```
 
-#### Pseudo-DAC Configuration Code
+#### Sigma-Delta Configuration Code
 ```cpp
-// Initialize High-Resolution PWM for Pseudo-DAC
-void setup_pseudo_dac() {
-    // HV Bias (GPIO 20) - 13-bit resolution (0-8191)
-    ledcSetup(0, 20000, 13); // 20kHz frequency
-    ledcAttachPin(20, 0);
-
-    // Trigger Threshold (GPIO 21)
-    ledcSetup(1, 20000, 13); 
-    ledcAttachPin(21, 1);
+// Initialize High-Speed Sigma-Delta for Analog Output
+void setup_sigma_delta() {
+    // HV Bias (GPIO 20)
+    sigmaDeltaSetup(0, 1000000); // 1MHz toggle rate
+    sigmaDeltaAttachPin(20, 0);
+    
+    // Threshold (GPIO 21)
+    sigmaDeltaSetup(1, 1000000);
+    sigmaDeltaAttachPin(21, 1);
 }
 
-void set_hv_bias_voltage(uint16_t value) {
-    ledcWrite(0, value); // Maps to 0.0V - 3.3V
+void set_hv_bias_voltage(uint8_t value) {
+    sigmaDeltaWrite(0, value); // Value is 0 to 255
 }
 ```
 
 #### Trade-offs
-- **Pros**: Reduced BOM cost, simpler PCB routing.
-- **Cons**: High output impedance and potential high-frequency ripple. Ripple on the threshold pin may cause false gamma triggers. A real DAC chip is always preferred for high-stability spectroscopy.
+- **Pros**: **Simplest possible hardware** (1R + 1C). Integrated BLE/Wi-Fi/USB-C.
+- **Cons**: 8-bit resolution (256 steps). If you need 12-bit precision, an external I2C DAC is still required.
 
 ---
 
@@ -223,6 +223,54 @@ It provides:
 - **`hal_storage_begin()`**: Initializes internal NVS Flash storage.
 - **`hal_save_params()` / `hal_load_params()`**: Saves calibration data to Flash (replaces the external I2C EEPROM).
 - **`hal_init_pins()`**: Configures all primary GPIOs for the Super Mini headers.
+
+---
+
+## ESP32-S2 GPIO Map (Simplicity Upgrade)
+
+The **ESP32-S2** is a superior "Simplicity" choice because it includes **two internal 8-bit DACs**, eliminating the need for external DAC chips or RC filters. It also features Native USB-C support.
+
+### ESP32-S2 Pinout Summary
+
+| Pomelo Function | SAML21 Pin | **ESP32-S2 GPIO** | Pin Type | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **HV Bias Control** | PA02 | **17** | **Internal DAC** | **No external parts needed** |
+| **Trigger Threshold**| PA05 | **18** | **Internal DAC** | **No external parts needed** |
+| **Gamma Trigger** | PA18 | **7** | Interrupt | Main detector ISR |
+| **Peak Det ADC** | PA07 | **4** | ADC Pin | Gamma energy reading |
+| **HV PWM** | PA10 | **1** | PWM | HV boost control |
+| **AFE Enable** | PA14 | **2** | Digital Out | Analog front end power |
+| **Reset Cap** | PA08 | **3** | Digital Out | Peak detector reset |
+| **Peak Disable** | PA15 | **5** | Digital Out | Peak detector control |
+| **System LED** | PA19 | **15** | Onboard | Status indicator |
+| **USB D- / D+** | PA24/25 | **19/20** | **INTERNAL** | Built-in to USB-C Connector |
+
+### ESP32-S2 Hardware Strategy
+
+1.  **Pure Hardware Simplicity**: Pins 17 and 18 connect **directly** to your bias and threshold inputs with zero extra components.
+2.  **Native USB**: Like the C3, the S2 handles USB-C internally on pins 19 and 20.
+3.  **Parameter Storage**: calibration and configuration are stored in the internal Flash using LittleFS or NVS.
+
+### ESP32-S2 Internal DAC Snippet
+
+```cpp
+// ESP32-S2 Internal DAC implementation
+#include <driver/dac.h>
+
+void setup_s2_internal_dac() {
+    dac_output_enable(DAC_CHANNEL_1); // GPIO 17
+    dac_output_enable(DAC_CHANNEL_2); // GPIO 18
+}
+
+void set_hv_bias(uint8_t value) {
+    // 8-bit value (0-255) maps to 0V - ~3.3V
+    dac_output_voltage(DAC_CHANNEL_1, value);
+}
+
+void set_threshold(uint8_t value) {
+    dac_output_voltage(DAC_CHANNEL_2, value);
+}
+```
 
 ---
 
