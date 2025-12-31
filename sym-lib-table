@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MICROFJ-60035-TSV-TR")(type "KiCad")(uri "${KIPRJMOD}/bGeigieScint/Kicad libs/MICROFJ-60035-TSV-TR.kicad_sym")(options "")(descr ""))
+)
