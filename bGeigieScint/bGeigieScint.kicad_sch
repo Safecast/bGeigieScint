@@ -21683,7 +21683,7 @@
 	(symbol
 		(lib_id "TLR341G-GTR")
 		(at 392.43 255.905 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -21718,7 +21718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/ic/amp_linear/opamp/tlr342f-e.pdf"
 			(at 392.43 255.905 0)
 			(effects
 				(font
@@ -21794,7 +21794,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U14")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -21802,7 +21802,7 @@
 	(symbol
 		(lib_id "TLV3201AIDBVT")
 		(at 237.49 120.015 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -21837,7 +21837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv3201"
 			(at 237.49 120.015 0)
 			(effects
 				(font
@@ -21910,7 +21910,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U6")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -22095,7 +22095,7 @@
 	(symbol
 		(lib_id "74LVC1G08GV,125")
 		(at 351.79 349.885 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22130,7 +22130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC1G08.pdf"
 			(at 351.79 349.885 0)
 			(effects
 				(font
@@ -22203,7 +22203,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U10")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -23743,7 +23743,7 @@
 	(symbol
 		(lib_id "TLR341G-GTR_1")
 		(at 347.98 140.335 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -23778,7 +23778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/ic/amp_linear/opamp/tlr342f-e.pdf"
 			(at 347.98 140.335 0)
 			(effects
 				(font
@@ -23854,7 +23854,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U8")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -24425,7 +24425,7 @@
 	(symbol
 		(lib_id "MC14043BDR2G")
 		(at 390.525 198.12 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -24460,7 +24460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mc14043b-d.pdf"
 			(at 390.525 198.12 0)
 			(effects
 				(font
@@ -24566,7 +24566,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U3")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -25030,7 +25030,7 @@
 	(symbol
 		(lib_id "LT3014BHVES5#TRMPBF")
 		(at 378.46 309.245 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -25065,7 +25065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/3014bfb.pdf"
 			(at 378.46 309.245 0)
 			(effects
 				(font
@@ -25138,7 +25138,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U11")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -26018,7 +26018,7 @@
 	(symbol
 		(lib_id "TLV7031DBVR")
 		(at 307.34 352.425 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -26053,7 +26053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv7031"
 			(at 307.34 352.425 0)
 			(effects
 				(font
@@ -26126,7 +26126,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U13")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -26696,7 +26696,7 @@
 	(symbol
 		(lib_id "XC6209F332MR-G")
 		(at 152.4 330.835 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -26731,7 +26731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/642/XC6209%2C12.pdf"
 			(at 152.4 330.835 0)
 			(effects
 				(font
@@ -26804,7 +26804,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U2")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -28949,7 +28949,7 @@
 	(symbol
 		(lib_id "LMV793MFX/NOPB")
 		(at 189.23 140.335 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -28984,7 +28984,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flmv793"
 			(at 189.23 140.335 0)
 			(effects
 				(font
@@ -29057,7 +29057,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U4")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -29520,7 +29520,7 @@
 	(symbol
 		(lib_id "NUP2114UCMR6T1G")
 		(at 136.525 194.945 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -29555,7 +29555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nup2114-d.pdf"
 			(at 136.525 194.945 0)
 			(effects
 				(font
@@ -29631,7 +29631,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "D1")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
@@ -35364,7 +35364,7 @@
 	(symbol
 		(lib_id "TPS7A2030PDBVR")
 		(at 97.79 112.395 0)
-		(unit 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -35399,7 +35399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1767143524797"
 			(at 97.79 112.395 0)
 			(effects
 				(font
@@ -35472,7 +35472,7 @@
 			(project "Polemo Core 2"
 				(path "/0190368d-9c8f-48e4-a1da-81c8419b9305"
 					(reference "U5")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
