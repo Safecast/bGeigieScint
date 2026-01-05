@@ -6,9 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "bGeigieScint Physics")
-		(date "2025-12-31")
+		(date "2026-01-05")
 		(rev "0.9")
-		(company "Safecast")
+		(company "Sensor board for bGeigieScint")
+		(comment 1 "Safecast ")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -2122,7 +2123,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.005 113.665) (xy 167.005 122.555)
+			(xy 167.005 113.665) (xy 167.005 121.285)
 		)
 		(stroke
 			(width 0)
@@ -2788,7 +2789,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD"
 			(at 157.48 71.755 0)
 			(effects
 				(font
@@ -3190,7 +3191,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.005 122.555 0)
+		(at 167.005 121.285 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3199,7 +3200,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a853b92-c6eb-469f-ad25-ad2c63b9286a")
 		(property "Reference" "#PWR09"
-			(at 167.005 128.905 0)
+			(at 167.005 127.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,7 +3209,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.005 127.635 0)
+			(at 167.005 126.365 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3216,7 +3217,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.005 122.555 0)
+			(at 167.005 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +3226,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.005 122.555 0)
+			(at 167.005 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3234,7 +3235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.005 122.555 0)
+			(at 167.005 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3256,7 +3257,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 264.795 156.845 0)
+		(at 257.175 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3265,7 +3266,7 @@
 		(fields_autoplaced yes)
 		(uuid "336de203-0655-432b-999c-2ff18564eae0")
 		(property "Reference" "H4"
-			(at 267.97 155.5749 0)
+			(at 260.35 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3274,7 +3275,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 267.97 158.1149 0)
+			(at 260.35 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3283,7 +3284,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 264.795 156.845 0)
+			(at 257.175 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3292,7 +3293,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 264.795 156.845 0)
+			(at 257.175 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3301,7 +3302,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 264.795 156.845 0)
+			(at 257.175 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3475,7 +3476,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD"
 			(at 128.27 71.755 0)
 			(effects
 				(font
@@ -3610,12 +3611,13 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 90.805 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -4098,12 +4100,13 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 139.7 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -4468,70 +4471,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 256.54 156.845 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "caff77c7-c3e9-4b11-84a1-d1dee3bb8653")
-		(property "Reference" "H3"
-			(at 259.715 155.5749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 259.715 158.1149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 256.54 156.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 156.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 256.54 156.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "bGeigieScint Physics"
-				(path "/5482910c-3562-491e-9203-123456789abc"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 35.56 92.71 0)
 		(unit 1)
@@ -4689,12 +4628,13 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 135.255 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -4753,12 +4693,13 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 63.5 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" ""

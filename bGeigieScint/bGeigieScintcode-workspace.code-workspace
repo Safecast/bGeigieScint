@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"mplab.mplab-importer.ignorePatterns": [
-			"firmware/PomeloCore/PomeloCore/PomeloCore.cproj"
+			"firmware/PomeloCore/PomeloCore/PomeloCore.cproj",
+			"PomeloCore/PomeloCore.cproj"
 		]
 	}
 }
