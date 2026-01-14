@@ -504,9 +504,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "bGeigieScint Physics.glb",
       "svg": "",
-      "vrml": ""
+      "vrml": "bGeigieScint Physics.wrl"
     },
     "page_layout_descr_file": ""
   },
