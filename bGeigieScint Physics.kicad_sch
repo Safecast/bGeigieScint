@@ -3257,7 +3257,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 257.175 157.48 0)
+		(at 264.16 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3266,7 +3266,7 @@
 		(fields_autoplaced yes)
 		(uuid "336de203-0655-432b-999c-2ff18564eae0")
 		(property "Reference" "H4"
-			(at 260.35 156.2099 0)
+			(at 267.335 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,7 +3275,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 260.35 158.7499 0)
+			(at 267.335 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +3284,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 257.175 157.48 0)
+			(at 264.16 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3293,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.175 157.48 0)
+			(at 264.16 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3302,7 +3302,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 257.175 157.48 0)
+			(at 264.16 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4401,6 +4401,70 @@
 			(project "bGeigieScint Physics"
 				(path "/5482910c-3562-491e-9203-123456789abc"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 256.54 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be2712c1-1b44-4540-88f4-bed43d66d55f")
+		(property "Reference" "H3"
+			(at 259.715 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 259.715 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 256.54 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 256.54 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "bGeigieScint Physics"
+				(path "/5482910c-3562-491e-9203-123456789abc"
+					(reference "H3")
 					(unit 1)
 				)
 			)
