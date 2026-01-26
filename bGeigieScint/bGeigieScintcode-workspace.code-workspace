@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "firmware/PomeloCore"
+		},
+		{
+			"path": "Kicad libs"
 		}
 	],
 	"settings": {
