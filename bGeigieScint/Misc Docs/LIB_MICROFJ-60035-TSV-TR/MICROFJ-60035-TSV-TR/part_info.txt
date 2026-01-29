@@ -1,0 +1,9 @@
+Manufacturer=onsemi
+PartNumber=MICROFJ-60035-TSV-TR
+PartCategory=Integrated Circuit
+PackageCategory=BGA
+PinCount=36
+Version=2.1
+Released=2023-03-02 13:56:17
+Downloaded=2025-12-31 03:37:09
+3D=Y

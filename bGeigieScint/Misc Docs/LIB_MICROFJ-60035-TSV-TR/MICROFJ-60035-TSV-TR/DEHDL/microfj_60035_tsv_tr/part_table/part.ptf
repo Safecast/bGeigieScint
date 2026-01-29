@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MICROFJ_60035_TSV_TR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "onsemi", "MICROFJ-60035-TSV-TR" (!) = "", "BGA36C100P6X6_613X613X67", "BGA", "863-MFJ60035TSVTR", "https://www.mouser.co.uk/ProductDetail/onsemi/MICROFJ-60035-TSV-TR?qs=byeeYqUIh0MKhzx4oC65Mg%3D%3D", "High-density microcells; Optimized for high-performance timing applications, such as ToF-PET; Ultra-low dark count rates of 50 kHz/mm2 typical; J-Series sensors feature ON Semiconductor's unique 'fast output' terminal; Exceptional breakdown voltage uniformity of +/-250 mV; Temperature stability of 21.5 mV/C; 3 mm, 4 mm and 6 mm sensor sizes; Available in a reflow solder compatible TSV chip-scale package; Bias voltage of <30 V", "https://www.onsemi.com/pub/Collateral/MICROJ-SERIES-D.PDF", "0.67 mm"
+END_PART
+
+END.

@@ -1,0 +1,18 @@
+.MICROFJ-60035-TSV-TR :1 ;High-density microcells; Optimized for high-performance timing applications, such as ToF-PET; Ultra-low dark count rates of 50 kHz/mm2 typical; J-Series sensors feature ON Semiconductor's unique 'fast output' terminal; Exceptional breakdown voltage uniformity of +/-250 mV; Temperature stability of 21.5 mV/C; 3 mm, 4 mm and 6 mm sensor sizes; Available in a reflow solder compatible TSV chip-scale package; Bias voltage of <30 V
+BGA36C100P6X6_613X613X67
+*STM IC
+*NGS
+*PNM 1=A1 2=A2 3=A3 4=A4 5=A5 6=A6 7=B1 8=B2 9=B3 10=B4 11=B5 12=B6 13=C1 14=C2 15=C3 16=C4 17=C5 18=C6 19=D1 20=D2 21=D3 22=D4 23=D5 24=D6 25=E1 26=E2 27=E3 28=E4 29=E5 30=E6 31=F1 32=F2 33=F3 34=F4 35=F5 36=F6
+*PLB 1="CATHODE_1" 2="NO CONNECT_1" 3="NO CONNECT_2" 4="NO CONNECT_3" 5="NO CONNECT_4" 6="NO CONNECT_5" 7="NO CONNECT_6" 8="NO CONNECT_7" 9="NO CONNECT_8" 10="NO CONNECT_9" 11="NO CONNECT_10" 12="NO CONNECT_11" 13="ANODE_1" 14="NO CONNECT_12" 15="NO CONNECT_13" 16="NO CONNECT_14" 17="NO CONNECT_15" 18="FAST OUTPUT_1" 19="ANODE_2" 20="NO CONNECT_16" 21="NO CONNECT_17" 22="NO CONNECT_18" 23="NO CONNECT_19" 24="FAST OUTPUT_2" 25="NO CONNECT_20" 26="NO CONNECT_21" &
+27="NO CONNECT_22" 28="NO CONNECT_23" 29="NO CONNECT_24" 30="NO CONNECT_25" 31="NO CONNECT_26" 32="NO CONNECT_27" 33="NO CONNECT_28" 34="NO CONNECT_29" 35="NO CONNECT_30" 36="CATHODE_2"
+*MXP 36
+*DFN MICROFJ-60035-TSV-TR
+~!Mouser Part Number (863-MFJ60035TSVTR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/onsemi/MICROFJ-60035-TSV-TR?qs=byeeYqUIh0MKhzx4oC65Mg%3D%3D)
+~!Manufacturer_Name (onsemi)
+~!Manufacturer_Part_Number (MICROFJ-60035-TSV-TR)
+~!Link Datasheet (https://www.onsemi.com/pub/Collateral/MICROJ-SERIES-D.PDF)
+~!Height (0.67mm)
+~!3D_Model (MICROFJ-60035-TSV-TR)
+MICROFJ-60035-TSV-TR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 23.1!U 24.1!U 25.1!U 26.1!U 27.1!U 28.1!U 29.1!U 30.1!U 31.1!U 32.1!U 33.1!U 34.1!U 35.1!U 36.1!U 

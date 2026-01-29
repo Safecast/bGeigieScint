@@ -1,0 +1,17 @@
+.AFBR-S4N44P014M :1 ;Photodiode 420nm Single Element
+AFBRS4N44P014M
+*STM IC
+*NGS
+*PNM 1=A1 2=A3 3=B2 4=C1 5=C3
+*PLB 1="CATHODE_1" 2="CATHODE_2" 3="ANODE" 4="CATHODE_3" 5="CATHODE_4"
+*MXP 5
+*DFN AFBR-S4N44P014M
+~!Mouser Part Number (630-AFBR-S4N44P014M)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Broadcom-Avago/AFBR-S4N44P014M?qs=OcgtsXO%252B3gvCU3dbtxthow%3D%3D)
+~!Manufacturer_Name (Avago Technologies)
+~!Manufacturer_Part_Number (AFBR-S4N44P014M)
+~!Link Datasheet (https://docs.broadcom.com/doc/AFBR-S4N44P014M-NUV-MT-Silicon-Photomultiplier)
+~!Height (1.23mm)
+~!3D_Model (AFBR-S4N44P014M)
+AFBR-S4N44P014M
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

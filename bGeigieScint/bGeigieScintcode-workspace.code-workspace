@@ -2,6 +2,18 @@
 	"folders": [
 		{
 			"path": "firmware/PomeloCore"
+		},
+		{
+			"path": "Kicad libs"
 		}
-	]
+	],
+	"settings": {
+		"mplab.mplab-importer.ignorePatterns": [
+			"firmware/PomeloCore/PomeloCore/PomeloCore.cproj",
+			"PomeloCore/PomeloCore.cproj"
+		],
+		"chat.tools.terminal.autoApprove": {
+			"true": true
+		}
+	}
 }
