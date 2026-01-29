@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MICROFJ-60035-TSV-TR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2023-03-02-13:56:17)
+    (mountForm default
+        (footprintRef "BGA36C100P6X6_613X613X67")
+        (spec "System")
+    )
+)

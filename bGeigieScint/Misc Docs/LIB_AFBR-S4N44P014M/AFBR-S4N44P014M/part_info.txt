@@ -1,0 +1,9 @@
+Manufacturer=Avago Technologies
+PartNumber=AFBR-S4N44P014M
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=5
+Version=1.4
+Released=2023-06-08 07:43:39
+Downloaded=2025-12-04 12:17:11
+3D=Y

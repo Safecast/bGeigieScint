@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AFBR_S4N44P014M'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Avago Technologies", "AFBR-S4N44P014M" (!) = "", "AFBRS4N44P014M", "Other", "630-AFBR-S4N44P014M", "https://www.mouser.co.uk/ProductDetail/Broadcom-Avago/AFBR-S4N44P014M?qs=OcgtsXO%252B3gvCU3dbtxthow%3D%3D", "Photodiode 420nm Single Element", "https://docs.broadcom.com/doc/AFBR-S4N44P014M-NUV-MT-Silicon-Photomultiplier", "1.23 mm"
+END_PART
+
+END.

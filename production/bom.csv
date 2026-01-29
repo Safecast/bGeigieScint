@@ -1,0 +1,9 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C2, C4",0805,3,100nF,
+"C3, C6",0805,2,4.7uF,
+IC1,BGA36C100P6X6_613X613X67,1,MICROFJ-60035-TSV-TR,
+"P1, P2",PinHeader_2x02_P2.54mm_Vertical_SMD,2,Header-Male-2.54_2x2,
+"R1, R3",0805,2,100Ω,
+"R4, R5",0805,2,10kΩ,
+U1,WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,1,TMP116xxDRV,
+U2,SOT-23-5,1,AT24CS01-STUM,
