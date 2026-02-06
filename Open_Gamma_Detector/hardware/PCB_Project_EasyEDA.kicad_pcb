@@ -5028,8 +5028,20 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/PICO.step"
+			(hide yes)
 			(offset
 				(xyz -10.5 -25.5501 1.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/EASYEDA_MODELS/Raspberry Pi Pico-R3.STEP"
+			(offset
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -11617,7 +11629,7 @@
 				(font
 					(face "NotoSerifCJKsc-Medium")
 					(size 0.9144 0.9144)
-					(thickness 0.254)
+					(thickness 0.2286)
 				)
 				(justify left top)
 			)
@@ -12110,13 +12122,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/HDR-TH_4P-P2.54-F-LI-1X4P.step"
 			(offset
-				(xyz 0 -0 -3)
+				(xyz 0 -0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -13338,13 +13350,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/HDR-TH_10P-P2.54-F-LI-1X10P.step"
 			(offset
-				(xyz -0 -0 -3.3)
+				(xyz -0 -0 4.2)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
