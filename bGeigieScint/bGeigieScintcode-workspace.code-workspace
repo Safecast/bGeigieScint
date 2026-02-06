@@ -4,7 +4,10 @@
 			"path": "firmware/PomeloCore"
 		},
 		{
-			"path": "Kicad libs"
+			"path": "../Mini_SiD/Mini_SiD"
+		},
+		{
+			"path": "../Open_Gamma_Detector/Opengamma"
 		}
 	],
 	"settings": {

@@ -1,0 +1,15 @@
+Comment,Designator,Footprint,LCSC,Quantity
+10kΩ,R5,R_0805_2012Metric,,1
+10kΩ,R4,R_0805_2012Metric,,1
+AT24CS01-STUM,U2,SOT-23-5,,1
+100Ω,R1,R_0805_2012Metric,,1
+4.7uF,C6,C_0805_2012Metric,,1
+Header-Male-2.54_2x2,P2,PinHeader_2x03_P2.54mm_Vertical_SMD,,1
+100nF,C1,C_0805_2012Metric,,1
+100nF,C4,C_0805_2012Metric,,1
+Header-Male-2.54_2x2,P1,PinHeader_2x03_P2.54mm_Vertical_SMD,,1
+100Ω,R3,R_0805_2012Metric,,1
+4.7uF,C3,C_0805_2012Metric,,1
+TMP116xxDRV,U1,WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,,1
+100nF,C2,C_0805_2012Metric,,1
+MICROFJ-60035-TSV-TR,IC1,BGA36C100P6X6_613X613X67,,1
