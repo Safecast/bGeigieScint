@@ -1,0 +1,6 @@
+MAX5026 Boost Converter
+See App Note Maxim 1831 (Analog.com)
+"Low Noise APD Bias Circuit" (Jan 7, 2003)
+~(BIASSHDN) is Arduino D12, default to H=Enable.
+Voltage adjustment by altering VADJ through resistors.
+See the spreadsheet to determine starting values. Place trimpots on sockets to enable removing them to measure set values with an ohmmeter.

@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Luciole") (type "KiCad") (uri "${KIPRJMOD}/../libraries") (options "") (descr ""))
+)

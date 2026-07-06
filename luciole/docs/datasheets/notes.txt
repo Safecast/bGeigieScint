@@ -1,0 +1,5 @@
+
+ADS8661 (TI) can't be used due to 15kHz LPF after programmable gain amplifier, before S/H.
+
+
+

@@ -1,0 +1,167 @@
+{
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "10.0.4"
+    },
+    "CreationDate": "2026-07-04T12:46:53-04:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "carrier1_Adalogger_M0_2x3pin",
+      "GUID": "63617272-6965-4723-915f-4164616c6f67",
+      "Revision": "A"
+    },
+    "Size": {
+      "X": 83.2,
+      "Y": 121.2
+    },
+    "LayerNumber": 4,
+    "BoardThickness": 1.6002,
+    "Finish": "None"
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.127,
+      "PadToTrack": 0.127,
+      "TrackToTrack": 0.127,
+      "MinLineWidth": 0.127
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.127,
+      "PadToTrack": 0.127,
+      "TrackToTrack": 0.127,
+      "TrackToRegion": 0.5,
+      "RegionToRegion": 0.5
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-Front.gbr",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-GNDA.gbr",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-VDD.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-Back.gbr",
+      "FileFunction": "Copper,L4,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-F_Paste.gbr",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "carrier1_Adalogger_M0_2x3pin-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Front"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.4801,
+      "Material": "FR4",
+      "Name": "Front/GNDA",
+      "Notes": "Type: dielectric layer 1 (from Front to GNDA)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "GNDA"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.4801,
+      "Material": "FR4",
+      "Name": "GNDA/VDD",
+      "Notes": "Type: dielectric layer 2 (from GNDA to VDD)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "VDD"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.4801,
+      "Material": "FR4",
+      "Name": "VDD/Back",
+      "Notes": "Type: dielectric layer 3 (from VDD to Back)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Back"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "custom_cursors": 5,
+  "last_sch_text_sim_command": ".TRAN 0.5u 2.0m",
+  "tabs": [
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 500p 200n",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(152, 78, 163)",
+          "cursor1": {
+            "position": 1.2484848484848486e-07,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/AMPOUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(255, 255, 51)",
+          "cursor2": {
+            "position": 1.246060606060606e-07,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(Net-_U5-+_)",
+          "trace_type": 257
+        }
+      ]
+    },
+    {
+      "analysis": "AC",
+      "commands": [
+        ".ac dec 10 1k 2G",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(152, 78, 163)",
+          "cursor1": {
+            "position": 331445.40173399774,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/AMPOUT) (gain)",
+          "trace_type": 521
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "cursor2": {
+            "position": 6034176.336545131,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(Net-_U5-+_) (gain)",
+          "trace_type": 521
+        }
+      ]
+    }
+  ],
+  "user_defined_signals": [],
+  "version": 7
+}

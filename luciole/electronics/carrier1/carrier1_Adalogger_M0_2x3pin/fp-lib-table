@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Luciole_Footprints") (type "KiCad") (uri "/home/louis/devel/Luciole/electronics/libraries/Luciole_Footprints.pretty") (options "") (descr ""))
+)

@@ -29200,14 +29200,14 @@
 		(layer "Edge.Cuts")
 		(uuid "ea5832cb-76f8-412b-94ca-17c7cd90a847")
 	)
-	(gr_text ""
-		(at 5 5 0)
-		(layer "Dwgs.User")
+	(gr_text "bGeigieScint\nSensor-board V0.9B"
+		(at 100 145 0)
+		(layer "F.Silkscreen")
 		(uuid "95985209-3107-40a5-8555-450a47b8e544")
 		(effects
 			(font
-				(size 10 10)
-				(thickness 1)
+				(size 1.5 1.5)
+				(thickness 0.25)
 			)
 			(justify left top)
 		)
